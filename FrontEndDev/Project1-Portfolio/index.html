@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katharina Kufieta Portfolio</title>
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen and (max-width: 600px)" type="text/css" href="css/smaller600px.css">
+    <link rel="stylesheet" media="screen and (min-width: 601px)" type="text/css" href="css/larger601px.css">
+    <!--link rel="stylesheet" media="screen and (min-width: 801px)" type="text/css" href="css/1200px.css"-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+
+    <header class="row header">
+      <div id="logo" class="header_logo">
+        <!-- <img class="h_logo" src="images/logo/trees.jpg" alt="Udacity Logo"> -->
+        <a class="h_logo" id="circle" href="#"></a>
+        <h1 class="h_logo_letters">KK</h1>
+      </div>
+      <div class="header_name">
+        <h1 class="h_name">Kufieta</h1>
+        <h1 class="h_occupation">FRONT-END NINJA</h1>
+      </div>
+      <a id="menu" class="header_nav">&#9776;</a>
+    </header>
+
+    <nav class="nav" id="drawer">
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a class="nav_link" href="#fend_projects">Front End</a>
+        </li>
+        <li class="nav_item">
+          <a class="nav_link" href="#ml_projects">Machine Learning</a>
+        </li>
+        <li class="nav_item"><a class="nav_link" href="#">Resume</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="col-12">
+          <img class="hero_image"
+            src="images/front_end/keyboard.jpg" 
+            alt="Mac Keyboard with backlight">
+        </div>
+      </section>
+
+      <section class="row" id="fend_projects">
+        <div class="col-12">
+          <h2 class="featured_work_header">Front-end: Featured Work</h2>
+        </div>
+      </section>
+
+      <section class="featured_work">
+        <div class="project">
+          <img class="p_img"
+            src="images/front_end/application.jpg" 
+            alt="Appify">
+          <h3 class="p-name">Resume</h3>
+          <a class="p-link" href="#">https://github.com/udacity/Appify/</a>
+        </div>
+        <div class="project">
+          <img class="p_img" src="images/front_end/arcade.jpg" alt="Sunflower">
+          <h3 class="p-name">Arcade Game Clone</h3>
+          <a class="p-link" href="#">https://github.com/udacity/Sunflower/</a>
+        </div>
+        <div class="project">
+          <img class="p_img" src="images/front_end/code-screen.jpg" alt="Bokeh">
+          <h3 class="p-name">Website Optimization</h3>
+          <a class="p-link" href="#">https://github.com/udacity/Bokeh/</a>
+        </div>
+        <div class="project">
+          <img class="p_img" src="images/front_end/map.jpg" alt="Appify">
+          <h3 class="p-name">Neighborhood Map Project</h3>
+          <a class="p-link" href="#">https://github.com/udacity/Appify/</a>
+        </div>
+        <div class="project">
+          <img class="p_img" src="images/front_end/kermit.jpg" alt="Sunflower">
+          <h3 class="p-name">Health Tracker</h3>
+          <a class="p-link" href="#">https://github.com/udacity/Sunflower/</a>
+        </div>
+        <div class="project">
+          <img class="p_img" src="images/front_end/testing.jpg" alt="Bokeh">
+          <h3 class="p-name">Feed Reader Testing</h3>
+          <a class="p-link" href="#">https://github.com/udacity/Bokeh/</a>
+        </div>
+      </section>
+  
+      <section class="hero">
+        <div class="col-12">
+          <img src="images/machine_learning/machine_learning.jpg" alt="HTML picture">
+        </div>
+      </section>
+
+
+      <section class="row" id="ml_projects">
+        <div class="col-12">
+          <h2 class="featured_work_header">Machine Learning: Featured Work</h2>
+        </div>
+      </section>
+
+      <div class="featured_work">
+        <div class="project">
+          <img class="p_img" src="images/machine_learning/boston.jpg" alt="Appify">
+          <h3 class="p-name">Predicting Boston Housing Prices</h3>
+          <a class="p-link" href="#">https://github.com/udacity/Appify/</a>
+        </div>
+        <div class="project">
+          <img class="p_img" src="images/machine_learning/intervention.jpg" alt="Sunflower">
+          <h3 class="p-name">Building an Intervention System</h3>
+          <a class="p-link" href="#">https://github.com/udacity/Sunflower/</a>
+        </div>
+        <div class="project">
+          <img class="p_img" src="images/machine_learning/customer.jpg" alt="Bokeh">
+          <h3 class="p-name">Creating Customer Segments</h3>
+          <a class="p-link" href="#">https://github.com/udacity/Bokeh/</a>
+        </div>
+        <div class="project">
+          <img class="p_img" src="images/machine_learning/cab.jpg" alt="Appify">
+          <h3 class="p-name">Train a smartcab to drive</h3>
+          <a class="p-link" href="#">https://github.com/udacity/Appify/</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+      /*
+       * Open the drawer when the menu icon is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var header = document.querySelector('header');
+      var main = document.querySelector('main');
+      var footer = document.querySelector('footer');
+      var drawer = document.querySelector('#drawer');
+      var nav_link = document.querySelector('.nav_link');
+      
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      header.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+      footer.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+      nav_link.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+    </script>
+  </body>
+</html>

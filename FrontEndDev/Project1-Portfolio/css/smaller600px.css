@@ -3,6 +3,10 @@
  * Optimizations are made at a minor break point at 400px.
  */
 
+#circle[href^="#ml_projects"] {
+  display: none;
+}
+
 @media screen and (max-width: 409px) {
   html, body {
     font-size: 60%;
@@ -210,6 +214,11 @@ h3 {
 
 .nav_link {
   display: inline-block;
+}
+
+.nav_link#nav_fend {
+  font-weight: 900;
+  color: #212121;
 }
 
 .nav_item {

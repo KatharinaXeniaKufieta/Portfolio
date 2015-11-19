@@ -59,6 +59,11 @@ h3 {
   font-weight: 400;
 }
 
+h4 {
+  font-weight: 300;
+}
+
+
 nav a, button {
   min-width: 48px;
   min-height: 48px;
@@ -68,6 +73,66 @@ nav a, button {
 /*
  * Content
  */
+
+.skills {
+  background-clip: content-box;
+  background-color: #f7f9fe;
+  /* background-color: #e8f3f8; */
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #bcbbbb;
+  margin-bottom: 10px;
+}
+.skills h3 {
+  font-size: 1.3em;
+  padding: 5px 15px 0px;
+}
+
+.skills ul {
+  padding-right: 10px;
+}
+
+.skills:last-of-type {
+  padding-right: 0;
+}
+
+.resume {
+  padding: 10px 0px 10px;
+}
+/*
+ * Footer
+ */
+
+footer {
+  padding-bottom: 10px;
+  border-bottom: solid 2px #bcbbbb;
+  margin-bottom: 30px;
+}
+
+[class*="brandico-"]:before {
+  display: inline-block;
+  font-family: 'brandico', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+  text-align: center;
+  padding-right: 10px;
+  width: 4vw;
+}
+
+[class*="brandico-"] {
+  display: inline-block;
+  width: 100px;
+  min-height: 40px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #616161;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
 
 
 /***********************

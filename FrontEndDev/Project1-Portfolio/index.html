@@ -4,50 +4,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katharina Kufieta Portfolio</title>
-    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,100' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" media="screen and (max-width: 600px)" type="text/css" href="css/smaller600px.css">
-    <link rel="stylesheet" media="screen and (min-width: 601px)" type="text/css" href="css/larger601px.css">
-    <!--link rel="stylesheet" media="screen and (min-width: 801px)" type="text/css" href="css/1200px.css"-->
+    <link rel="stylesheet" type='text/css' src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+    <link rel="stylesheet" type='text/css' href='http://weloveiconfonts.com/api/?family=brandico'>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:900,400,300,100'>
+    <link id="fend_small" rel="stylesheet" media="screen and (max-width: 600px)" type="text/css" href="css/ml_smaller600px.css">
+    <link id="fend_medium" rel="stylesheet" media="screen and (min-width: 601px)" type="text/css" href="css/ml_larger601px.css">
+    <link id="ml_small" rel="stylesheet" media="screen and (max-width: 600px)" type="text/css" href="css/smaller600px.css">
+    <link id="ml_medium" rel="stylesheet" media="screen and (min-width: 601px)" type="text/css" href="css/larger601px.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   </head>
   <body>
 
-    <header class="row header">
+    <header id="header_id" class="row header">
       <div id="logo" class="header_logo">
-        <!-- <img class="h_logo" src="images/logo/trees.jpg" alt="Udacity Logo"> -->
-        <a class="h_logo" id="circle" href="#"></a>
+        <a class="h_logo" id="circle" href="#fend_projects"></a>
+        <a class="h_logo" id="circle" href="#ml_projects"></a>
         <h1 class="h_logo_letters">KK</h1>
       </div>
       <div class="header_name">
         <h1 class="h_name">Kufieta</h1>
-        <h1 class="h_occupation">FRONT-END NINJA</h1>
+        <h1 id="occupation" class="h_occupation">FRONT-END NINJA</h1>
       </div>
       <a id="menu" class="header_nav">&#9776;</a>
+      <!-- Alternatives for Hamburger icon: http://www.fileformat.info/info/unicode/char/2261/browsertest.html -->
     </header>
 
     <nav class="nav" id="drawer">
       <ul class="nav_list">
         <li class="nav_item">
-          <a class="nav_link" href="#fend_projects">Front End</a>
+          <a id="nav_fend" class="nav_link" href="#fend_projects">Front End</a>
         </li>
         <li class="nav_item">
-          <a class="nav_link" href="#ml_projects">Machine Learning</a>
+          <a id="nav_ml" class="nav_link" href="#ml_projects">Machine Learning</a>
         </li>
-        <li class="nav_item"><a class="nav_link" href="#">Resume</a></li>
+        <li class="nav_item"><a class="nav_link" href="#skills_id">Skills</a></li>
+        <li class="nav_item"><a class="nav_link" href="#contact_id">Contact</a></li>
       </ul>
     </nav>
 
     <main>
       <section class="hero">
         <div class="col-12">
-          <img class="hero_image"
+          <img class="hero_image" id="fend_projects"
             src="images/front_end/keyboard.jpg" 
             alt="Mac Keyboard with backlight">
         </div>
       </section>
 
-      <section class="row" id="fend_projects">
+      <section class="row">
         <div class="col-12">
           <h2 class="featured_work_header">Front-end: Featured Work</h2>
         </div>
@@ -89,19 +94,19 @@
       </section>
   
       <section class="hero">
-        <div class="col-12">
-          <img src="images/machine_learning/machine_learning.jpg" alt="HTML picture">
+        <div class="col-12" id="ml_projects">
+          <img id="ml_breakpoint" src="images/machine_learning/machine_learning.jpg" alt="HTML picture">
         </div>
       </section>
 
 
-      <section class="row" id="ml_projects">
+      <section class="row">
         <div class="col-12">
           <h2 class="featured_work_header">Machine Learning: Featured Work</h2>
         </div>
       </section>
 
-      <div class="featured_work">
+      <section class="featured_work">
         <div class="project">
           <img class="p_img" src="images/machine_learning/boston.jpg" alt="Appify">
           <h3 class="p-name">Predicting Boston Housing Prices</h3>
@@ -122,10 +127,42 @@
           <h3 class="p-name">Train a smartcab to drive</h3>
           <a class="p-link" href="#">https://github.com/udacity/Appify/</a>
         </div>
-      </div>
+      </section>
+
+      <article class="resume row">
+        <div id="skills_id" class="col-12"><h2>Skills</h2></div>
+        <div class="col-4 skills">
+          <h3>Front-End</h3>
+          <ul>
+            <li><h4>HTML, CSS</h3></li>
+            <li><h4>Bootstrap</h3></li>
+            <li><h4>JavaScript, JQuery, and so on</h3></li>
+          </ul>
+        </div>
+        <div class="col-4 skills">
+          <h3>Machine Learning</h3>
+          <ul>
+            <li><h4>Supervised Learning</h3></li>
+            <li><h4>Unsupervised Learning</h3></li>
+            <li><h4>Reinforcement Learning</h3></li>
+            <li><h4>Cuda, Cacla</h3></li>
+          </ul>
+        </div>
+        <div class="col-4 skills">
+          <h3>Other</h3>
+          <ul>
+            <li><h4>Matlab, Simulink, R</h3></li>
+            <li><h4>C++, Python, Squirrel, Kivy, Bash</h3></li>
+            <li><h4>Mercurial, Git</h3></li>
+            <li><h4>Arduino Uno, Electric Imp, XBee</h3></li>
+          </ul>
+        </div>
+      </article>
     </main>
 
-    <footer>
+    <footer id="contact_id" class="contact row">
+      <a class="col-3 brandico-linkedin" target="_blank" href="https://www.linkedin.com/in/katharinakufieta">LinkedIn</a>
+      <a class="col-3 brandico-github" target="_blank" href="https://github.com/KatharinaXeniaKufieta">Github</a>
     </footer>
 
     <script>
@@ -156,5 +193,58 @@
         drawer.classList.remove('open');
       });
     </script>
+
+    <script>
+
+      ;(function() {
+          document.getElementById('fend_small').disabled = true;
+          document.getElementById('fend_medium').disabled = true;
+          var throttle = function(type, name, obj) {
+              obj = obj || window;
+              var running = false;
+              var func = function() {
+                  if (running) { return; }
+                  running = true;
+                  requestAnimationFrame(function() {
+                      obj.dispatchEvent(new CustomEvent(name));
+                      running = false;
+                  });
+              };
+              obj.addEventListener(type, func);
+          };
+
+          /* init - you can init any event */
+          throttle ("scroll", "optimizedScroll");
+      })();
+
+      // handle event
+      window.addEventListener("optimizedScroll", function() {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+        var headerBottom = $('#header_id').offset().top + $('#header_id').height();
+        var mlTop = $('#ml_breakpoint').offset().top;
+        var skillsTop = $('#skills_id').offset().top;
+
+        if (headerBottom > mlTop) {
+          $('#occupation').html('Machine Learning Engineer');
+          document.getElementById('fend_small').disabled = false;
+          document.getElementById('fend_medium').disabled = false;
+          document.getElementById('ml_small').disabled = true;
+          document.getElementById('ml_medium').disabled = true;
+          document.getElementById('skills_css').disabled = true;
+        } else {
+          $('#occupation').html('Front-End Ninja');
+          document.getElementById('fend_small').disabled = true;
+          document.getElementById('fend_medium').disabled = true;
+          document.getElementById('ml_small').disabled = false;
+          document.getElementById('ml_medium').disabled = false;
+          document.getElementById('skills_css').disabled = true;
+        }
+        if (docViewBottom > skillsTop) {
+          $('#occupation').html('Software Engineer');
+        }
+      });
+    </script>
   </body>
 </html>
+

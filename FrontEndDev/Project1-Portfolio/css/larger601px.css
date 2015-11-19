@@ -2,6 +2,9 @@
  * This file specifies the style specific for screens up to 500px.
  * Optimizations are made at a minor break point at 400px.
  */
+#circle[href^="#ml_projects"] {
+  display: none;
+}
 
 @media screen and (max-width: 700px) {
   html, body {
@@ -51,6 +54,31 @@
     font-weight: 200;
     color: #696767;
     text-decoration: none;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+  .nav {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 700px) {
+  .nav {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 750px) {
+  .nav {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 800px) {
+  .nav {
+    font-size: 15px;
   }
 }
 
@@ -246,7 +274,7 @@ h3 {
  */
 
 .nav {
-  font-size: 15px;
+/*   font-size: 15px; */
   width: 100%;
   margin: 0;
   position: fixed;
@@ -266,8 +294,13 @@ h3 {
   vertical-align: bottom;
 }
 
+.nav_link#nav_fend {
+  font-weight: 900;
+  color: #212121;
+}
+
 .nav_item {
-  width: 33%;
+  width: 24.7%;
   display: inline-block;
   text-align: center;
   line-height: 24px;

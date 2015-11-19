@@ -7,11 +7,11 @@
     <link rel="stylesheet" type='text/css' src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
     <link rel="stylesheet" type='text/css' href='http://weloveiconfonts.com/api/?family=brandico'>
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:900,400,300,100'>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link id="fend_small" rel="stylesheet" media="screen and (max-width: 600px)" type="text/css" href="css/ml_smaller600px.css">
     <link id="fend_medium" rel="stylesheet" media="screen and (min-width: 601px)" type="text/css" href="css/ml_larger601px.css">
     <link id="ml_small" rel="stylesheet" media="screen and (max-width: 600px)" type="text/css" href="css/smaller600px.css">
     <link id="ml_medium" rel="stylesheet" media="screen and (min-width: 601px)" type="text/css" href="css/larger601px.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   </head>
   <body>
@@ -52,9 +52,9 @@
         </div>
       </section>
 
-      <section class="row">
+      <section class="row projects_title">
         <div class="col-12">
-          <h2 class="featured_work_header">Front-end: Featured Work</h2>
+          <h2 class="featured_work_header">Front-End: Featured Work</h2>
         </div>
       </section>
 
@@ -100,7 +100,7 @@
       </section>
 
 
-      <section class="row">
+      <section class="row projects_title">
         <div class="col-12">
           <h2 class="featured_work_header">Machine Learning: Featured Work</h2>
         </div>
@@ -131,7 +131,7 @@
 
       <article class="resume row">
         <div id="skills_id" class="col-12"><h2>Skills</h2></div>
-        <div class="col-4 skills">
+        <div class="skills">
           <h3>Front-End</h3>
           <ul>
             <li><h4>HTML, CSS</h3></li>
@@ -139,7 +139,7 @@
             <li><h4>JavaScript, JQuery, and so on</h3></li>
           </ul>
         </div>
-        <div class="col-4 skills">
+        <div class="skills">
           <h3>Machine Learning</h3>
           <ul>
             <li><h4>Supervised Learning</h3></li>
@@ -148,7 +148,7 @@
             <li><h4>Cuda, Cacla</h3></li>
           </ul>
         </div>
-        <div class="col-4 skills">
+        <div class="skills">
           <h3>Other</h3>
           <ul>
             <li><h4>Matlab, Simulink, R</h3></li>
@@ -174,7 +174,7 @@
       var main = document.querySelector('main');
       var footer = document.querySelector('footer');
       var drawer = document.querySelector('#drawer');
-      var nav_link = document.querySelector('.nav_link');
+      var navlink = document.querySelectorAll('.nav_link');
       
       menu.addEventListener('click', function(e) {
         drawer.classList.toggle('open');
@@ -185,12 +185,14 @@
       });
       main.addEventListener('click', function() {
         drawer.classList.remove('open');
+        console.log("nav_link: " + navlink);
       });
       footer.addEventListener('click', function() {
         drawer.classList.remove('open');
       });
-      nav_link.addEventListener('click', function() {
+      $(navlink).click(function() {
         drawer.classList.remove('open');
+        console.log("nav_link: " + navlink);
       });
     </script>
 

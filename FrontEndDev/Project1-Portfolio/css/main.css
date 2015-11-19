@@ -20,7 +20,7 @@
  * to the <html> element to skip the wrapper div and keep our markup clean.
  */
 
-body, html {
+body, html, main {
   margin: 0 auto; /* Centering the page */
   padding: 0;
   width: 100%;
@@ -70,9 +70,45 @@ nav a, button {
   padding: 1.5em;
 }
 
+.nav_link {
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
 /*
  * Content
  */
+
+@media screen and (max-width: 800px) {
+  .resume {
+    padding: 10px 20px 10px;
+  }
+  footer {
+    margin: 0px 20px;
+  }
+  .skills {
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .resume {
+    padding: 10px 0px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .skills {
+    width: calc(100%/12*4);
+  }
+}
+
+
 
 .skills {
   background-clip: content-box;
@@ -96,9 +132,6 @@ nav a, button {
   padding-right: 0;
 }
 
-.resume {
-  padding: 10px 0px 10px;
-}
 /*
  * Footer
  */

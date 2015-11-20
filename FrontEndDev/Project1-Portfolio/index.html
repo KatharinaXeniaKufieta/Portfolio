@@ -7,11 +7,12 @@
     <link rel="stylesheet" type='text/css' src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
     <link rel="stylesheet" type='text/css' href='http://weloveiconfonts.com/api/?family=brandico'>
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:900,400,300,100'>
-    <link id="fend_small" rel="stylesheet" media="screen and (max-width: 600px)" type="text/css" href="css/ml_smaller600px.css">
-    <link id="fend_medium" rel="stylesheet" media="screen and (min-width: 601px)" type="text/css" href="css/ml_larger601px.css">
-    <link id="ml_small" rel="stylesheet" media="screen and (max-width: 600px)" type="text/css" href="css/smaller600px.css">
-    <link id="ml_medium" rel="stylesheet" media="screen and (min-width: 601px)" type="text/css" href="css/larger601px.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link id="fend_css" rel="stylesheet" type="text/css" href="css/front_end.css">
+    <link id="ml_css" rel="stylesheet" type="text/css" href="css/machine_learning.css">
+    <link id="skills_css" rel="stylesheet" type="text/css" href="css/skills.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" type="text/css" href="css/smaller600px.css">
+    <link rel="stylesheet" media="screen and (min-width: 601px)" type="text/css" href="css/larger601px.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   </head>
   <body>
@@ -38,7 +39,7 @@
         <li class="nav_item">
           <a id="nav_ml" class="nav_link" href="#ml_projects">Machine Learning</a>
         </li>
-        <li class="nav_item"><a class="nav_link" href="#skills_id">Skills</a></li>
+        <li class="nav_item"><a id="nav_skills" class="nav_link" href="#skills_id">Skills</a></li>
         <li class="nav_item"><a class="nav_link" href="#contact_id">Contact</a></li>
       </ul>
     </nav>
@@ -46,61 +47,181 @@
     <main>
       <section class="hero">
         <div class="col-12">
-          <img class="hero_image" id="fend_projects"
-            src="images/front_end/keyboard.jpg" 
-            alt="Mac Keyboard with backlight">
+          <picture id="fend_projects">
+            <source
+              media="(min-width: 601px)"
+              srcset="images_opt/front_end/hero/keyboard-805-1x.jpg 1x, images_opt/front_end/hero/keyboard-805-2x.jpg 2x">
+            <source
+              media="(min-width: 401px)"
+              srcset="images_opt/front_end/hero/keyboard-600-1x.jpg 1x, images_opt/front_end/hero/keyboard-600-2x.jpg 2x">
+            <img
+              alt="Hero picture: Apple Macbook Pro keyboard with backlight on."
+              src="images_opt/front_end/hero/keyboard-400-1x.jpg"
+              srcset="images_opt/front_end/hero/keyboard-400-1x.jpg 1x, images_opt/front_end/hero/keyboard-400-2x.jpg 2x">
+          </picture>
         </div>
       </section>
 
-      <section class="row">
+      <section class="row projects_title">
         <div class="col-12">
-          <h2 class="featured_work_header">Front-end: Featured Work</h2>
+          <h2 class="featured_work_header">Front-End: Featured Work</h2>
         </div>
       </section>
 
       <section class="featured_work">
         <div class="project">
-          <img class="p_img"
-            src="images/front_end/application.jpg" 
-            alt="Appify">
+          <picture>
+            <source
+              media="(min-width: 1201px)"
+              srcset="images_opt/front_end/application-400-1x.jpg 1x, images_opt/front_end/application-400-2x.jpg 2x">
+            <source
+              media="(min-width: 701px)"
+              srcset="images_opt/front_end/application-250-1x.jpg 1x, images_opt/front_end/application-250-2x.jpg 2x">
+            <source
+              media="(min-width: 601px)"
+              srcset="images_opt/front_end/application-360-1x.jpg 1x, images_opt/front_end/application-360-2x.jpg 2x">
+            <source
+              media="(min-width: 401px)"
+              srcset="images_opt/front_end/application-600-1x.jpg 1x, images_opt/front_end/application-600-2x.jpg 2x">
+            <img
+              alt="Resume application picture: Laptop, phone and an open notebook."
+              src="images_opt/front_end/application-360-1x.jpg"
+              srcset="images_opt/front_end/application-360-1x.jpg 1x, images_opt/front_end/application-360-2x.jpg 2x">
+          </picture>
           <h3 class="p-name">Resume</h3>
-          <a class="p-link" href="#">https://github.com/udacity/Appify/</a>
+          <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
         <div class="project">
-          <img class="p_img" src="images/front_end/arcade.jpg" alt="Sunflower">
+          <picture>
+            <source
+              media="(min-width: 1201px)"
+              srcset="images_opt/front_end/arcade-400-1x.jpg 1x, images_opt/front_end/arcade-400-2x.jpg 2x">
+            <source
+              media="(min-width: 701px)"
+              srcset="images_opt/front_end/arcade-250-1x.jpg 1x, images_opt/front_end/arcade-250-2x.jpg 2x">
+            <source
+              media="(min-width: 601px)"
+              srcset="images_opt/front_end/arcade-360-1x.jpg 1x, images_opt/front_end/arcade-360-2x.jpg 2x">
+            <source
+              media="(min-width: 401px)"
+              srcset="images_opt/front_end/arcade-600-1x.jpg 1x, images_opt/front_end/arcade-600-2x.jpg 2x">
+            <img
+              alt="Arcade game clone application picture: Old arcade game machine."
+              src="images_opt/front_end/arcade-360-1x.jpg"
+              srcset="images_opt/front_end/arcade-360-1x.jpg 1x, images_opt/front_end/arcade-360-2x.jpg 2x">
+          </picture>
           <h3 class="p-name">Arcade Game Clone</h3>
-          <a class="p-link" href="#">https://github.com/udacity/Sunflower/</a>
+          <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
         <div class="project">
-          <img class="p_img" src="images/front_end/code-screen.jpg" alt="Bokeh">
+          <picture>
+            <source
+              media="(min-width: 1201px)"
+              srcset="images_opt/front_end/code-screen-400-1x.jpg 1x, images_opt/front_end/code-screen-400-2x.jpg 2x">
+            <source
+              media="(min-width: 701px)"
+              srcset="images_opt/front_end/code-screen-250-1x.jpg 1x, images_opt/front_end/code-screen-250-2x.jpg 2x">
+            <source
+              media="(min-width: 601px)"
+              srcset="images_opt/front_end/code-screen-360-1x.jpg 1x, images_opt/front_end/code-screen-360-2x.jpg 2x">
+            <source
+              media="(min-width: 401px)"
+              srcset="images_opt/front_end/code-screen-600-1x.jpg 1x, images_opt/front_end/code-screen-600-2x.jpg 2x">
+            <img
+              alt="Website optimization application picture: Laptop screen with code written on it."
+              src="images_opt/front_end/code-screen-360-1x.jpg"
+              srcset="images_opt/front_end/code-screen-360-1x.jpg 1x, images_opt/front_end/code-screen-360-2x.jpg 2x">
+          </picture>
           <h3 class="p-name">Website Optimization</h3>
-          <a class="p-link" href="#">https://github.com/udacity/Bokeh/</a>
+          <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
         <div class="project">
-          <img class="p_img" src="images/front_end/map.jpg" alt="Appify">
+          <picture>
+            <source
+              media="(min-width: 1201px)"
+              srcset="images_opt/front_end/map-400-1x.jpg 1x, images_opt/front_end/map-400-2x.jpg 2x">
+            <source
+              media="(min-width: 701px)"
+              srcset="images_opt/front_end/map-250-1x.jpg 1x, images_opt/front_end/map-250-2x.jpg 2x">
+            <source
+              media="(min-width: 601px)"
+              srcset="images_opt/front_end/map-360-1x.jpg 1x, images_opt/front_end/map-360-2x.jpg 2x">
+            <source
+              media="(min-width: 401px)"
+              srcset="images_opt/front_end/map-600-1x.jpg 1x, images_opt/front_end/map-600-2x.jpg 2x">
+            <img
+              alt="Neightborhood map project application picture: Two hands holding a map open."
+              src="images_opt/front_end/map-360-1x.jpg"
+              srcset="images_opt/front_end/map-360-1x.jpg 1x, images_opt/front_end/map-360-2x.jpg 2x">
+          </picture>
           <h3 class="p-name">Neighborhood Map Project</h3>
-          <a class="p-link" href="#">https://github.com/udacity/Appify/</a>
+          <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
         <div class="project">
-          <img class="p_img" src="images/front_end/kermit.jpg" alt="Sunflower">
+          <picture>
+            <source
+              media="(min-width: 1201px)"
+              srcset="images_opt/front_end/kermit-400-1x.jpg 1x, images_opt/front_end/kermit-400-2x.jpg 2x">
+            <source
+              media="(min-width: 701px)"
+              srcset="images_opt/front_end/kermit-250-1x.jpg 1x, images_opt/front_end/kermit-250-2x.jpg 2x">
+            <source
+              media="(min-width: 601px)"
+              srcset="images_opt/front_end/kermit-360-1x.jpg 1x, images_opt/front_end/kermit-360-2x.jpg 2x">
+            <source
+              media="(min-width: 401px)"
+              srcset="images_opt/front_end/kermit-600-1x.jpg 1x, images_opt/front_end/kermit-600-2x.jpg 2x">
+            <img
+              alt="Health tracker application picture: A happy healthy kermit frog who is grinning while standing in a snow field."
+              src="images_opt/front_end/kermit-360-1x.jpg"
+              srcset="images_opt/front_end/kermit-360-1x.jpg 1x, images_opt/front_end/kermit-360-2x.jpg 2x">
+          </picture>
           <h3 class="p-name">Health Tracker</h3>
-          <a class="p-link" href="#">https://github.com/udacity/Sunflower/</a>
+          <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
         <div class="project">
-          <img class="p_img" src="images/front_end/testing.jpg" alt="Bokeh">
+          <picture>
+            <source
+              media="(min-width: 1201px)"
+              srcset="images_opt/front_end/testing-400-1x.jpg 1x, images_opt/front_end/testing-400-2x.jpg 2x">
+            <source
+              media="(min-width: 701px)"
+              srcset="images_opt/front_end/testing-250-1x.jpg 1x, images_opt/front_end/testing-250-2x.jpg 2x">
+            <source
+              media="(min-width: 601px)"
+              srcset="images_opt/front_end/testing-360-1x.jpg 1x, images_opt/front_end/testing-360-2x.jpg 2x">
+            <source
+              media="(min-width: 401px)"
+              srcset="images_opt/front_end/testing-600-1x.jpg 1x, images_opt/front_end/testing-600-2x.jpg 2x">
+            <img
+              alt="Feed reader testing application picture: An open laptop that shows graphical data analytics on its screen."
+              src="images_opt/front_end/testing-360-1x.jpg"
+              srcset="images_opt/front_end/testing-360-1x.jpg 1x, images_opt/front_end/testing-360-2x.jpg 2x">
+          </picture>
           <h3 class="p-name">Feed Reader Testing</h3>
-          <a class="p-link" href="#">https://github.com/udacity/Bokeh/</a>
+          <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
       </section>
   
       <section class="hero">
         <div class="col-12" id="ml_projects">
-          <img id="ml_breakpoint" src="images/machine_learning/machine_learning.jpg" alt="HTML picture">
+          <picture>
+            <source
+              media="(min-width: 601px)"
+              srcset="images_opt/machine_learning/hero/machine_learning-805-1x.jpg 1x, images_opt/machine_learning/hero/machine_learning-805-2x.jpg 2x">
+            <source
+              media="(min-width: 401px)"
+              srcset="images_opt/machine_learning/hero/machine_learning-600-1x.jpg 1x, images_opt/machine_learning/hero/machine_learning-600-2x.jpg 2x">
+            <img
+              alt="Hero picture: A tiny robot holding computer memory in its hands while standing next to a Apple Macbook."
+              src="images_opt/machine_learning/hero/machine_learning-400-1x.jpg"
+              srcset="images_opt/machine_learning/hero/machine_learning-400-1x.jpg 1x, images_opt/machine_learning/hero/machine_learning-400-2x.jpg 2x">
+          </picture>
         </div>
       </section>
 
 
-      <section class="row">
+      <section class="row projects_title">
         <div class="col-12">
           <h2 class="featured_work_header">Machine Learning: Featured Work</h2>
         </div>
@@ -108,53 +229,121 @@
 
       <section class="featured_work">
         <div class="project">
-          <img class="p_img" src="images/machine_learning/boston.jpg" alt="Appify">
+          <picture>
+            <source
+              media="(min-width: 1201px)"
+              srcset="images_opt/machine_learning/boston-400-1x.jpg 1x, images_opt/machine_learning/boston-400-2x.jpg 2x">
+            <source
+              media="(min-width: 701px)"
+              srcset="images_opt/machine_learning/boston-250-1x.jpg 1x, images_opt/machine_learning/boston-250-2x.jpg 2x">
+            <source
+              media="(min-width: 601px)"
+              srcset="images_opt/machine_learning/boston-360-1x.jpg 1x, images_opt/machine_learning/boston-360-2x.jpg 2x">
+            <source
+              media="(min-width: 401px)"
+              srcset="images_opt/machine_learning/boston-600-1x.jpg 1x, images_opt/machine_learning/boston-600-2x.jpg 2x">
+            <img
+              alt="Predicting Boston Housing Prices application picture: A beautiful building located in Boston."
+              src="images_opt/machine_learning/boston-360-1x.jpg"
+              srcset="images_opt/machine_learning/boston-360-1x.jpg 1x, images_opt/machine_learning/boston-360-2x.jpg 2x">
+          </picture>
           <h3 class="p-name">Predicting Boston Housing Prices</h3>
-          <a class="p-link" href="#">https://github.com/udacity/Appify/</a>
+          <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
         <div class="project">
-          <img class="p_img" src="images/machine_learning/intervention.jpg" alt="Sunflower">
+          <picture>
+            <source
+              media="(min-width: 1201px)"
+              srcset="images_opt/machine_learning/intervention-400-1x.jpg 1x, images_opt/machine_learning/intervention-400-2x.jpg 2x">
+            <source
+              media="(min-width: 701px)"
+              srcset="images_opt/machine_learning/intervention-250-1x.jpg 1x, images_opt/machine_learning/intervention-250-2x.jpg 2x">
+            <source
+              media="(min-width: 601px)"
+              srcset="images_opt/machine_learning/intervention-360-1x.jpg 1x, images_opt/machine_learning/intervention-360-2x.jpg 2x">
+            <source
+              media="(min-width: 401px)"
+              srcset="images_opt/machine_learning/intervention-600-1x.jpg 1x, images_opt/machine_learning/intervention-600-2x.jpg 2x">
+            <img
+              alt="Building an intervention system application picture: A graffity of very colorful monkeys that are screaming at something."
+              src="images_opt/machine_learning/intervention-360-1x.jpg"
+              srcset="images_opt/machine_learning/intervention-360-1x.jpg 1x, images_opt/machine_learning/intervention-360-2x.jpg 2x">
+          </picture>
           <h3 class="p-name">Building an Intervention System</h3>
-          <a class="p-link" href="#">https://github.com/udacity/Sunflower/</a>
+          <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
         <div class="project">
-          <img class="p_img" src="images/machine_learning/customer.jpg" alt="Bokeh">
+          <picture>
+            <source
+              media="(min-width: 1201px)"
+              srcset="images_opt/machine_learning/customer-400-1x.jpg 1x, images_opt/machine_learning/customer-400-2x.jpg 2x">
+            <source
+              media="(min-width: 701px)"
+              srcset="images_opt/machine_learning/customer-250-1x.jpg 1x, images_opt/machine_learning/customer-250-2x.jpg 2x">
+            <source
+              media="(min-width: 601px)"
+              srcset="images_opt/machine_learning/customer-360-1x.jpg 1x, images_opt/machine_learning/customer-360-2x.jpg 2x">
+            <source
+              media="(min-width: 401px)"
+              srcset="images_opt/machine_learning/customer-600-1x.jpg 1x, images_opt/machine_learning/customer-600-2x.jpg 2x">
+            <img
+              alt="Creating customer segments application picture: A circle of some sort that has consumers and users written on it. I really just could not find any pictures here."
+              src="images_opt/machine_learning/customer-360-1x.jpg"
+              srcset="images_opt/machine_learning/customer-360-1x.jpg 1x, images_opt/machine_learning/customer-360-2x.jpg 2x">
+          </picture>
           <h3 class="p-name">Creating Customer Segments</h3>
-          <a class="p-link" href="#">https://github.com/udacity/Bokeh/</a>
+          <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
         <div class="project">
-          <img class="p_img" src="images/machine_learning/cab.jpg" alt="Appify">
+          <picture>
+            <source
+              media="(min-width: 1201px)"
+              srcset="images_opt/machine_learning/cab-400-1x.jpg 1x, images_opt/machine_learning/cab-400-2x.jpg 2x">
+            <source
+              media="(min-width: 701px)"
+              srcset="images_opt/machine_learning/cab-250-1x.jpg 1x, images_opt/machine_learning/cab-250-2x.jpg 2x">
+            <source
+              media="(min-width: 601px)"
+              srcset="images_opt/machine_learning/cab-360-1x.jpg 1x, images_opt/machine_learning/cab-360-2x.jpg 2x">
+            <source
+              media="(min-width: 401px)"
+              srcset="images_opt/machine_learning/cab-600-1x.jpg 1x, images_opt/machine_learning/cab-600-2x.jpg 2x">
+            <img
+              alt="Tran a smartcab to drive application picture: A graffity of a cult car that crashed straight through the wall. I think it's a perfect picture for the project and funny."
+              src="images_opt/machine_learning/cab-360-1x.jpg"
+              srcset="images_opt/machine_learning/cab-360-1x.jpg 1x, images_opt/machine_learning/cab-360-2x.jpg 2x">
+          </picture>
           <h3 class="p-name">Train a smartcab to drive</h3>
-          <a class="p-link" href="#">https://github.com/udacity/Appify/</a>
+          <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
       </section>
 
       <article class="resume row">
         <div id="skills_id" class="col-12"><h2>Skills</h2></div>
-        <div class="col-4 skills">
+        <div class="skills">
           <h3>Front-End</h3>
           <ul>
-            <li><h4>HTML, CSS</h3></li>
-            <li><h4>Bootstrap</h3></li>
-            <li><h4>JavaScript, JQuery, and so on</h3></li>
+            <li><p>HTML, CSS</p></li>
+            <li><p>Bootstrap</p></li>
+            <li><p>JavaScript, JQuery, and so on</p></li>
           </ul>
         </div>
-        <div class="col-4 skills">
+        <div class="skills">
           <h3>Machine Learning</h3>
           <ul>
-            <li><h4>Supervised Learning</h3></li>
-            <li><h4>Unsupervised Learning</h3></li>
-            <li><h4>Reinforcement Learning</h3></li>
-            <li><h4>Cuda, Cacla</h3></li>
+            <li><p>Supervised Learning</p></li>
+            <li><p>Unsupervised Learning</p></li>
+            <li><p>Reinforcement Learning</p></li>
+            <li><p>Cuda, Cacla</p></li>
           </ul>
         </div>
-        <div class="col-4 skills">
+        <div class="skills">
           <h3>Other</h3>
           <ul>
-            <li><h4>Matlab, Simulink, R</h3></li>
-            <li><h4>C++, Python, Squirrel, Kivy, Bash</h3></li>
-            <li><h4>Mercurial, Git</h3></li>
-            <li><h4>Arduino Uno, Electric Imp, XBee</h3></li>
+            <li><p>Matlab, Simulink, R</p></li>
+            <li><p>C++, Python, Squirrel, Kivy, Bash</p></li>
+            <li><p>Mercurial, Git</p></li>
+            <li><p>Arduino Uno, Electric Imp, XBee</p></li>
           </ul>
         </div>
       </article>
@@ -174,7 +363,7 @@
       var main = document.querySelector('main');
       var footer = document.querySelector('footer');
       var drawer = document.querySelector('#drawer');
-      var nav_link = document.querySelector('.nav_link');
+      var navlink = document.querySelectorAll('.nav_link');
       
       menu.addEventListener('click', function(e) {
         drawer.classList.toggle('open');
@@ -185,20 +374,21 @@
       });
       main.addEventListener('click', function() {
         drawer.classList.remove('open');
+        console.log("nav_link: " + navlink);
       });
       footer.addEventListener('click', function() {
         drawer.classList.remove('open');
       });
-      nav_link.addEventListener('click', function() {
+      $(navlink).click(function() {
         drawer.classList.remove('open');
+        console.log("nav_link: " + navlink);
       });
     </script>
 
     <script>
 
       ;(function() {
-          document.getElementById('fend_small').disabled = true;
-          document.getElementById('fend_medium').disabled = true;
+          document.getElementById('fend_css').disabled = true;
           var throttle = function(type, name, obj) {
               obj = obj || window;
               var running = false;
@@ -222,26 +412,24 @@
         var docViewTop = $(window).scrollTop();
         var docViewBottom = docViewTop + $(window).height();
         var headerBottom = $('#header_id').offset().top + $('#header_id').height();
-        var mlTop = $('#ml_breakpoint').offset().top;
-        var skillsTop = $('#skills_id').offset().top;
+        var mlTop = $('#ml_projects').offset().top;
+        var contactTop = $('#contact_id').offset().top;
 
-        if (headerBottom > mlTop) {
-          $('#occupation').html('Machine Learning Engineer');
-          document.getElementById('fend_small').disabled = false;
-          document.getElementById('fend_medium').disabled = false;
-          document.getElementById('ml_small').disabled = true;
-          document.getElementById('ml_medium').disabled = true;
+        if (docViewBottom > contactTop) {
+          $('#occupation').html('Software Engineer');
+          document.getElementById('fend_css').disabled = true;
+          document.getElementById('ml_css').disabled = true;
+          document.getElementById('skills_css').disabled = false;
+        } else if (headerBottom < mlTop) {
+          $('#occupation').html('Front-End Ninja');
+          document.getElementById('fend_css').disabled = false;
+          document.getElementById('ml_css').disabled = true;
           document.getElementById('skills_css').disabled = true;
         } else {
-          $('#occupation').html('Front-End Ninja');
-          document.getElementById('fend_small').disabled = true;
-          document.getElementById('fend_medium').disabled = true;
-          document.getElementById('ml_small').disabled = false;
-          document.getElementById('ml_medium').disabled = false;
+          $('#occupation').html('Machine Learning Engineer');
+          document.getElementById('fend_css').disabled = true;
+          document.getElementById('ml_css').disabled = false;
           document.getElementById('skills_css').disabled = true;
-        }
-        if (docViewBottom > skillsTop) {
-          $('#occupation').html('Software Engineer');
         }
       });
     </script>

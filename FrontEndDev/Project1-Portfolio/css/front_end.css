@@ -1,0 +1,20 @@
+/* 
+ * This file specifies the style specific for screens up to 500px.
+ * Optimizations are made at a minor break point at 400px.
+ */
+#circle[href^="#ml_projects"] {
+  display: none;
+}
+
+#circle {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%; 
+  background-image: url("../images_opt/logo/trees-250-1x.jpg");
+  background-size: cover;
+}
+
+.nav_link#nav_fend {
+  font-weight: 900;
+  color: #212121;
+}

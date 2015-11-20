@@ -1,12 +1,15 @@
 * {
-  /* border: 1px solid red !important; */
-}
-
-* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+#figure-transition {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 * {
@@ -20,7 +23,7 @@
  * to the <html> element to skip the wrapper div and keep our markup clean.
  */
 
-body, html {
+body, html, main {
   margin: 0 auto; /* Centering the page */
   padding: 0;
   width: 100%;
@@ -37,7 +40,7 @@ img, embed, object, video, svg {
   max-height: 100%;
 }
 
-h1, h3, h4, h5 {
+h1, h3, h4, h5, p {
   color: #696767;
   margin: 0;
 }
@@ -59,10 +62,9 @@ h3 {
   font-weight: 400;
 }
 
-h4 {
+h4, p {
   font-weight: 300;
 }
-
 
 nav a, button {
   min-width: 48px;
@@ -70,35 +72,103 @@ nav a, button {
   padding: 1.5em;
 }
 
+.nav_link {
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
 /*
  * Content
  */
+
+@media screen and (max-width: 800px) {
+  .resume {
+    padding: 10px 20px 10px;
+  }
+  footer {
+    margin: 0px 20px;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .resume {
+    padding: 10px 0px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .skills {
+    width: calc(100%/12*4);
+  }
+}
 
 .skills {
   background-clip: content-box;
   background-color: #f7f9fe;
   /* background-color: #e8f3f8; */
-  padding-right: 10px;
   padding-bottom: 10px;
-  border-bottom: solid 2px #bcbbbb;
   margin-bottom: 10px;
 }
-.skills h3 {
-  font-size: 1.3em;
-  padding: 5px 15px 0px;
+
+@media screen and (max-width: 600px) {
+  .skills h3 {
+    font-size: 1.7em;
+    padding: 5px 15px 0px;
+  }
+  footer {
+    font-size: 1.5em;
+  }
+
+  .skills p {
+    font-size: 1.3em;
+    padding: 5px 15px 0px;
+  }
+
+  .skills:last-of-type {
+    border-bottom: solid 2px #bcbbbb;
+  }
 }
 
-.skills ul {
+@media screen and (min-width: 601px) {
+  .skills h3 {
+    font-size: 1.7em;
+    padding: 5px 15px 0px;
+  }
+
+  footer {
+    font-size: 1.5em;
+  }
+
+  .skills {
   padding-right: 10px;
+    border-bottom: solid 2px #bcbbbb;
+  }
+
+  .skills ul {
+    padding-right: 10px;
+  }
+
+  .skills:last-of-type {
+    padding-right: 0;
+  }
 }
 
-.skills:last-of-type {
-  padding-right: 0;
-}
-
-.resume {
-  padding: 10px 0px 10px;
-}
 /*
  * Footer
  */

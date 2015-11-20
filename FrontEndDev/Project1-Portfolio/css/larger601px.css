@@ -2,9 +2,7 @@
  * This file specifies the style specific for screens up to 500px.
  * Optimizations are made at a minor break point at 400px.
  */
-#circle[href^="#ml_projects"] {
-  display: none;
-}
+
 
 @media screen and (max-width: 700px) {
   html, body {
@@ -56,7 +54,6 @@
     text-decoration: none;
   }
 }
-
 
 @media screen and (max-width: 640px) {
   .nav {
@@ -136,7 +133,6 @@
 @media screen and (min-width: 801px) {
   html, body {
     font-size: 100%;
-    max-width: 801px;
     margin: 0 auto;
   }
   .header_logo {
@@ -154,7 +150,6 @@
   }
   .nav {
     top: 105px;
-    max-width: 801px;
   }
   .h_logo_letters {
     top: calc(80px/2 - 0.7*16*2*0.5px);
@@ -162,9 +157,6 @@
   #circle {
     height: 80px;
     width: 80px;
-  }
-  .hero {
-    margin-top: 110px;
   }
   .project {
     width: 33.33%;
@@ -191,8 +183,10 @@
     color: #696767;
     text-decoration: none;
   }
+  .hero {
+    margin-top: 110px;
+  }
 }
-
 
 
 h2 {
@@ -208,7 +202,6 @@ h3 {
  */
 .header {
   position: fixed;
-  max-width: 801px;
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.9);
   padding-bottom: 10px;
@@ -242,14 +235,6 @@ h3 {
   left: 5px;
 }
 
-#circle {
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%; 
-  background-image: url("../images/logo/trees.jpg");
-  background-size: cover;
-}
-
 .h_name {
   font-size: 3.33em;
   font-weight: 200;
@@ -274,7 +259,6 @@ h3 {
  */
 
 .nav {
-/*   font-size: 15px; */
   width: 100%;
   margin: 0;
   position: fixed;
@@ -294,11 +278,6 @@ h3 {
   vertical-align: bottom;
 }
 
-.nav_link#nav_fend {
-  font-weight: 900;
-  color: #212121;
-}
-
 .nav_item {
   width: 24.7%;
   display: inline-block;
@@ -307,27 +286,11 @@ h3 {
   text-transform: uppercase;
 }
 
-.nav a {
-  text-decoration: none;
-  color: #616161;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-  color: #212121;
-}
-
-
-
 /*
  * Content: Hero
  */
-
 .hero {
   position: relative;
-}
-
-.hero_image {
 }
 
 /*
@@ -346,3 +309,40 @@ h3 {
   display: flex; flex-wrap: wrap;
 }
 
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  html, body, header, nav, footer {
+    max-width: 801px;
+  }
+  .hero {
+    margin-top: 110px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  html, body {
+    width: 100%;
+  }
+  main, header, nav {
+    max-width: 66.6%;
+    margin: 0 auto;
+  }
+  footer {
+    max-width: 66.6%;
+    margin: 0 auto 30px;
+  }
+  header, nav, .nav {
+    margin-left: 16.7%;
+  }
+  .hero {
+    width: 50%; 
+    margin-top: 160px;
+    display: inline-block;
+  }
+  .projects_title {
+    width: 50%;
+    display: inline-block;
+    margin-top: 140px;
+    text-align: right;
+  }
+}

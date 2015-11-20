@@ -3,13 +3,9 @@
  * Optimizations are made at a minor break point at 400px.
  */
 
-#circle[href^="#ml_projects"] {
-  display: none;
-}
-
-@media screen and (max-width: 409px) {
+@media screen and (max-width: 350px) {
   html, body {
-    font-size: 60%;
+    font-size: 70%;
   }
   .header_logo {
     width: calc(100%/12*3);
@@ -29,6 +25,45 @@
   }
 
   .h_logo_letters {
+    font-size: 2.5em;
+    top: calc(50px/2 - 0.7*16*2*0.5px);
+  }
+  #circle {
+    height: 50px;
+    width: 50px;
+  }
+  .hero {
+    margin-top: 75px;
+  }
+  .h_name {
+    padding-top: 7px;
+  }
+}
+
+
+@media screen and (min-width: 351px) and (max-width: 409px) {
+  html, body {
+    font-size: 75%;
+  }
+  .header_logo {
+    width: calc(100%/12*3);
+  }
+  .header_name {
+    width: calc(100%/12*6);
+  }
+  .header_nav {
+    width: calc(100%/12*3);
+  }
+  .h_name:before {
+    content: "K.\00a0";
+    display: inline-block;
+  }
+  .nav {
+    top: 65px;
+  }
+
+  .h_logo_letters {
+    font-size: 2.5em;
     top: calc(50px/2 - 0.7*16*2*0.5px);
   }
   #circle {
@@ -43,7 +78,7 @@
 
 @media screen and (min-width: 410px) and (max-width: 500px) {
   html, body {
-    font-size: 70%;
+    font-size: 80%;
   }
   .header_logo {
     width: calc(100%/12*2);
@@ -62,6 +97,7 @@
     top: 70px;
   }
   .h_logo_letters {
+  font-size: 2em;
     top: calc(60px/2 - 0.7*16*2*0.5px);
   }
   #circle {
@@ -94,6 +130,7 @@
     top: 70px;
   }
   .h_logo_letters {
+  font-size: 2em;
     top: calc(70px/2 - 0.7*16*2*0.5px);
   }
   #circle {
@@ -104,8 +141,6 @@
     margin-top: 100px;
   }
 }
-
-
 
 h2 {
   font-size: 2.5em;
@@ -147,19 +182,10 @@ h3 {
 }
 
 .h_logo_letters {
-  font-size: 2em;
   font-weight: 400;
   position: absolute;
   color: white;
   left: 5px;
-}
-
-#circle {
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%; 
-  background-image: url("../images/logo/trees.jpg");
-  background-size: cover;
 }
 
 .h_name {
@@ -184,7 +210,6 @@ h3 {
 /*
  * Navigation
  */
-
 .nav {
   font-size: 15px;
   width: 250px;
@@ -216,11 +241,6 @@ h3 {
   display: inline-block;
 }
 
-.nav_link#nav_fend {
-  font-weight: 900;
-  color: #212121;
-}
-
 .nav_item {
   display: inline-block;
   width: 100%;
@@ -230,17 +250,6 @@ h3 {
   text-transform: uppercase;
 }
 
-.nav a {
-  text-decoration: none;
-  color: #616161;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-  color: #212121;
-}
-
-
 
 /*
  * Content: Hero
@@ -248,9 +257,6 @@ h3 {
 
 .hero {
   position: relative;
-}
-
-.hero_image {
 }
 
 /*

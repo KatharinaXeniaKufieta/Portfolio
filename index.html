@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katharina Kufieta Portfolio</title>
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <!--script type="text/javascript" src="js/bootstrap.min.js"></script-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" type='text/css' src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
     <link rel="stylesheet" type='text/css' href='http://weloveiconfonts.com/api/?family=entypo'>
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:900,400,300,100'>
@@ -13,7 +17,7 @@
     <link id="skills-css" rel="stylesheet" type="text/css" href="css/skills.css">
     <link rel="stylesheet" media="screen and (max-width: 600px)" type="text/css" href="css/smaller600px.css">
     <link rel="stylesheet" media="screen and (min-width: 601px)" type="text/css" href="css/larger601px.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   <body>
 
@@ -72,7 +76,7 @@
       </section>
 
       <section class="featured-work">
-        <div class="project">
+        <div class="project img-responsive center-block" data-toggle="modal" data-target="#project1-fend">
           <picture>
             <source
               media="(min-width: 1201px)"
@@ -94,7 +98,7 @@
           <h3 class="p-name">Resume</h3>
           <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
-        <div class="project">
+        <div class="project img-responsive" data-toggle="modal" data-target="#project2-fend">
           <picture>
             <source
               media="(min-width: 1201px)"
@@ -116,7 +120,7 @@
           <h3 class="p-name">Arcade Game Clone</h3>
           <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
-        <div class="project">
+        <div class="project img-responsive" data-toggle="modal" data-target="#project3-fend">
           <picture>
             <source
               media="(min-width: 1201px)"
@@ -138,7 +142,7 @@
           <h3 class="p-name">Website Optimization</h3>
           <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
-        <div class="project">
+        <div class="project img-responsive" data-toggle="modal" data-target="#project4-fend">
           <picture>
             <source
               media="(min-width: 1201px)"
@@ -160,7 +164,7 @@
           <h3 class="p-name">Neighborhood Map Project</h3>
           <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
-        <div class="project">
+        <div class="project img-responsive" data-toggle="modal" data-target="#project5-fend">
           <picture>
             <source
               media="(min-width: 1201px)"
@@ -182,7 +186,7 @@
           <h3 class="p-name">Health Tracker</h3>
           <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
-        <div class="project">
+        <div class="project img-responsive" data-toggle="modal" data-target="#project6-fend">
           <picture>
             <source
               media="(min-width: 1201px)"
@@ -232,7 +236,7 @@
       </section>
 
       <section class="featured-work">
-        <div class="project">
+        <div class="project img-responsive" data-toggle="modal" data-target="#project1-ml">
           <picture>
             <source
               media="(min-width: 1201px)"
@@ -254,7 +258,7 @@
           <h3 class="p-name">Predicting Boston Housing Prices</h3>
           <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
-        <div class="project">
+        <div class="project img-responsive" data-toggle="modal" data-target="#project2-ml">
           <picture>
             <source
               media="(min-width: 1201px)"
@@ -276,7 +280,7 @@
           <h3 class="p-name">Building an Intervention System</h3>
           <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
-        <div class="project">
+        <div class="project img-responsive" data-toggle="modal" data-target="#project3-ml">
           <picture>
             <source
               media="(min-width: 1201px)"
@@ -298,7 +302,7 @@
           <h3 class="p-name">Creating Customer Segments</h3>
           <a class="p-link" href="#">https://github.com/KatharinaXeniaKufieta</a>
         </div>
-        <div class="project">
+        <div class="project img-responsive" data-toggle="modal" data-target="#project4-ml">
           <picture>
             <source
               media="(min-width: 1201px)"
@@ -351,12 +355,186 @@
           </ul>
         </section>
       </article>
+
     </main>
 
     <footer id="contact-id" class="contact row">
       <a class="col-4 entypo-linkedin" target="_blank" href="https://www.linkedin.com/in/katharinakufieta">LinkedIn</a>
       <a class="col-4 entypo-github" target="_blank" href="https://github.com/KatharinaXeniaKufieta">Github</a>
     </footer>
+
+    <!-- Modal Project 1 FEND-->
+    <div class="modal fade" id="project1-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-uppercase" id="myModalLabel">Resume</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placekitten.com/444/300" alt="Adorable kittens as placeholders.">
+            <p class="p-modal">Resume is in progress. Have some cuteness overload instead!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Project 2 FEND-->
+    <div class="modal fade" id="project2-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-uppercase" id="myModalLabel">Arcade Game Clone</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placekitten.com/315/330" alt="Adorable kittens as placeholders.">
+            <p class="p-modal">The Arcade Game Clone is not yet here. Omigosh look at this kitty!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Project 3 FEND-->
+    <div class="modal fade" id="project3-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-uppercase" id="myModalLabel">Website Optimization</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placekitten.com/555/500" alt="Adorable kittens as placeholders.">
+            <p class="p-modal">The website is being optimized... loading ... kittens!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Project 4 FEND-->
+    <div class="modal fade" id="project4-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-uppercase" id="myModalLabel">Neighborhood Map Project</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placekitten.com/555/400" alt="Adorable kittens as placeholders.">
+            <p class="p-modal">All neighbors, come here and pet me. Now.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Project 5 FEND-->
+    <div class="modal fade" id="project5-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-uppercase" id="myModalLabel">Health Tracker</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placekitten.com/555/330" alt="Adorable kittens as placeholders.">
+            <p class="p-modal">You know what's great for your health? Petting a cute little baby cat.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Project 6 FEND-->
+    <div class="modal fade" id="project6-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-uppercase" id="myModalLabel">Feed Reader Testing</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placekitten.com/455/310" alt="Adorable kittens as placeholders.">
+            <p class="p-modal">Feed... me!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Project 1 ML-->
+    <div class="modal fade" id="project1-ml" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-uppercase" id="myModalLabel">Predicting Boston Housing Prices</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placekitten.com/555/270" alt="Adorable kittens as placeholders.">
+            <p class="p-modal">"Work in progress" says the kitten and moves on.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Project 2 ML-->
+    <div class="modal fade" id="project2-ml" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-uppercase" id="myModalLabel">Building an intervention system</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placekitten.com/555/300" alt="Adorable kittens as placeholders.">
+            <p class="p-modal">Still building it? Not my fault.. please let me down.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Project 3 ML-->
+    <div class="modal fade" id="project3-ml" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-uppercase" id="myModalLabel">Creating Customer Segments</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placekitten.com/490/400" alt="Adorable kittens as placeholders.">
+            <p class="p-modal">Awww..dorable.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Project 4 ML-->
+    <div class="modal fade" id="project4-ml" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-uppercase" id="myModalLabel">Train a smartcab to drive</h2>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placekitten.com/540/300" alt="Adorable kittens as placeholders.">
+            <p class="p-modal">Uh oh, I'll better hide in here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script>
       /*

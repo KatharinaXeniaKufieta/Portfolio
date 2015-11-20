@@ -7,6 +7,9 @@
   html, body {
     font-size: 70%;
   }
+  h4, p {
+    font-weight: 400;
+  }
   .header_logo {
     width: calc(100%/12*3);
   }
@@ -26,7 +29,7 @@
 
   .h_logo_letters {
     font-size: 2.5em;
-    top: calc(50px/2 - 0.7*16*2*0.5px);
+    top: calc(50px/2 - 0.7*16*1.5*0.5px);
   }
   #circle {
     height: 50px;
@@ -36,6 +39,7 @@
     margin-top: 75px;
   }
   .h_name {
+    font-weight: 300;
     padding-top: 7px;
   }
 }
@@ -44,6 +48,9 @@
 @media screen and (min-width: 351px) and (max-width: 409px) {
   html, body {
     font-size: 75%;
+  }
+  h4, p {
+    font-weight: 400;
   }
   .header_logo {
     width: calc(100%/12*3);
@@ -57,6 +64,9 @@
   .h_name:before {
     content: "K.\00a0";
     display: inline-block;
+  }
+  .h_name {
+    font-weight: 300;
   }
   .nav {
     top: 65px;
@@ -93,12 +103,15 @@
     content: "Katharina\00a0";
     display: inline-block;
   }
+  .h_name {
+    font-weight: 200;
+  }
   .nav {
     top: 70px;
   }
   .h_logo_letters {
-  font-size: 2em;
-    top: calc(60px/2 - 0.7*16*2*0.5px);
+  font-size: 2.5em;
+    top: calc(60px/2 - 0.7*16*2.5*0.5px);
   }
   #circle {
     height: 60px;
@@ -126,12 +139,15 @@
     content: "Katharina\00a0";
     display: inline-block;
   }
+  .h_name {
+    font-weight: 200;
+  }
   .nav {
     top: 70px;
   }
   .h_logo_letters {
-  font-size: 2em;
-    top: calc(70px/2 - 0.7*16*2*0.5px);
+  font-size: 2.5em;
+    top: calc(70px/2 - 0.7*16*2.5*0.5px);
   }
   #circle {
     height: 70px;
@@ -190,7 +206,6 @@ h3 {
 
 .h_name {
   font-size: 3.33em;
-  font-weight: 200;
   text-align: left;
   margin-bottom: 0px;
   width: 100%;
@@ -291,7 +306,7 @@ h3 {
 .p-link {
   font-size: 1.5em;
   margin: 0px;
-  font-weight: 200;
+  font-weight: 300;
   color: #696767;
   text-decoration: none;
 }

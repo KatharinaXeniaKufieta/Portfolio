@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katharina Kufieta Portfolio</title>
     <link rel="stylesheet" type='text/css' src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
-    <link rel="stylesheet" type='text/css' href='http://weloveiconfonts.com/api/?family=brandico'>
+    <link rel="stylesheet" type='text/css' href='http://weloveiconfonts.com/api/?family=entypo'>
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:900,400,300,100'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link id="fend_css" rel="stylesheet" type="text/css" href="css/front_end.css">
@@ -27,7 +27,8 @@
         <h1 class="h_name">Kufieta</h1>
         <h1 id="occupation" class="h_occupation">FRONT-END NINJA</h1>
       </div>
-      <a id="menu" class="header_nav">&#9776;</a>
+      <!-- <a class="col-4 entypo-linkedin" target="_blank" href="https://www.linkedin.com/in/katharinakufieta">LinkedIn</a> -->
+      <a id="menu" class="header_nav entypo-menu"></a>
       <!-- Alternatives for Hamburger icon: http://www.fileformat.info/info/unicode/char/2261/browsertest.html -->
     </header>
 
@@ -350,8 +351,8 @@
     </main>
 
     <footer id="contact_id" class="contact row">
-      <a class="col-3 brandico-linkedin" target="_blank" href="https://www.linkedin.com/in/katharinakufieta">LinkedIn</a>
-      <a class="col-3 brandico-github" target="_blank" href="https://github.com/KatharinaXeniaKufieta">Github</a>
+      <a class="col-4 entypo-linkedin" target="_blank" href="https://www.linkedin.com/in/katharinakufieta">LinkedIn</a>
+      <a class="col-4 entypo-github" target="_blank" href="https://github.com/KatharinaXeniaKufieta">Github</a>
     </footer>
 
     <script>
@@ -388,7 +389,9 @@
     <script>
 
       ;(function() {
-          document.getElementById('fend_css').disabled = true;
+          document.getElementById('fend_css').disabled = false;
+          document.getElementById('ml_css').disabled = true;
+          document.getElementById('skills_css').disabled = true;
           var throttle = function(type, name, obj) {
               obj = obj || window;
               var running = false;

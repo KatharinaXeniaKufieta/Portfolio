@@ -23,7 +23,7 @@
  * to the <html> element to skip the wrapper div and keep our markup clean.
  */
 
-body, html, main {
+body, html, main, footer {
   margin: 0 auto; /* Centering the page */
   padding: 0;
   width: 100%;
@@ -64,6 +64,9 @@ h3 {
 
 h4, p {
   font-weight: 300;
+}
+
+@media screen and (max-width: 400px) {
 }
 
 nav a, button {
@@ -179,19 +182,25 @@ footer {
   margin-bottom: 30px;
 }
 
-[class*="brandico-"]:before {
+[class*="entypo-"]:before {
   display: inline-block;
-  font-family: 'brandico', sans-serif;
+  font-family: 'entypo', sans-serif;
   text-shadow: 3px 3px 3px #aaa;
   text-align: center;
   padding-right: 10px;
   width: 4vw;
 }
 
-[class*="brandico-"] {
+[class*="entypo-"] {
   display: inline-block;
   width: 100px;
   min-height: 40px;
+}
+
+.entypo-menu:before {
+  text-shadow: none;
+  font-size: 1.5em;
+  padding-right: 30px;
 }
 
 .contact a {

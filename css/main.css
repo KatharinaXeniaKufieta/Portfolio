@@ -75,24 +75,37 @@ nav a, button {
   padding: 1.5em;
 }
 
-.nav_link {
+.nav-link {
   -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
   transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
-.nav a {
+nav a {
   text-decoration: none;
   color: #616161;
 }
 
-.nav a:hover {
+nav a:hover {
   text-decoration: underline;
   color: #212121;
+}
+
+.copyright{
+  text-decoration: underline;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #616161;
 }
 
 /*
  * Content
  */
+
+.h-logo {
+  display: inline-block;
+}
+
 
 @media screen and (max-width: 800px) {
   .resume {
@@ -270,4 +283,5 @@ footer {
 .col-12 {
   width: 100%;
 }
+
 

@@ -2,7 +2,7 @@
  * This file specifies the style specific for screens up to 500px.
  * Optimizations are made at a minor break point at 400px.
  */
-#circle[href^="#ml_projects"] {
+#circle[href^="#ml-projects"] {
   display: none;
 }
 
@@ -13,7 +13,7 @@
   background-color: #69d2e7;
 }
 
-.nav_link#nav_skills {
+.nav-link#nav-skills {
   font-weight: 900;
   color: #212121;
 }

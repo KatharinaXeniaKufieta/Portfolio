@@ -1,57 +1,70 @@
-/* 
- * This file specifies the style specific for screens up to 500px.
- * Optimizations are made at a minor break point at 400px.
+/*
+ * This file specifies the style specific for screen widths > 600px.
+ * Optimizations are made at several minor break point.
  */
-
-
 @media screen and (max-width: 700px) {
-  html, body {
+  html, 
+  body {
     font-size: 95%;
   }
+
   .header-logo {
     width: calc(100%/12*2);
   }
+
   .header-name {
     width: calc(100%/12*10);
   }
+
   .header-nav {
     width: calc(100%/12*0);
   }
+
   .h-name:before {
     content: "Katharina\00a0";
     display: inline-block;
   }
+
   nav {
     top: 105px;
   }
+
   .h-logo-letters {
     top: calc(80px/2 - 0.7*16*2*0.5px);
   }
-  #circle {
+
+  .circle {
     height: 80px;
     width: 80px;
   }
+
   .hero {
     margin-top: 110px;
   }
+
   .project {
     width: 50%;
     padding: 5px 20px 20px 20px;
   }
+
   .p-name {
     font-size: 1.5em;
     font-weight: 400;
-    margin: 0px;
+    margin: 0;
     color: #696767;
     text-transform: uppercase;
   }
 
   .p-link {
     font-size: 1em;
-    margin: 0px;
+    margin: 0;
     font-weight: 200;
     color: #696767;
     text-decoration: none;
+  }
+
+  .modal-body {
+    font-size: 1.2em;
   }
 }
 
@@ -60,7 +73,6 @@
     font-size: 12px;
   }
 }
-
 
 @media screen and (min-width: 641px) and (max-width: 700px) {
   nav {
@@ -81,50 +93,61 @@
 }
 
 @media screen and (min-width: 701px) and (max-width: 800px) {
-  html, body {
+  html, 
+  body {
     font-size: 100%;
   }
+
   .header-logo {
     width: calc(100%/12*2);
   }
+
   .header-name {
     width: calc(100%/12*10);
   }
+
   .header-nav {
     width: calc(100%/12*0);
   }
+
   .h-name:before {
     content: "Katharina\00a0";
     display: inline-block;
   }
+
   nav {
     top: 105px;
   }
+
   .h-logo-letters {
     top: calc(80px/2 - 0.7*16*2*0.5px);
   }
-  #circle {
+
+  .circle {
     height: 80px;
     width: 80px;
   }
+
   .hero {
     margin-top: 110px;
   }
+
   .project {
     width: 33.33%;
     padding: 5px 20px 20px 20px;
   }
+
   .p-name {
     font-size: 1.2em;
     font-weight: 400;
-    margin: 0px;
+    margin: 0;
     color: #696767;
     text-transform: uppercase;
   }
 
   .p-link {
     font-size: 0.7em;
-    margin: 0px;
+    margin: 0;
     font-weight: 200;
     color: #696767;
     text-decoration: none;
@@ -132,58 +155,71 @@
 }
 
 @media screen and (min-width: 801px) {
-  html, body {
+  html, 
+  body {
     font-size: 100%;
     margin: 0 auto;
   }
+
   .header-logo {
     width: calc(100%/12*2);
   }
+
   .header-name {
     width: calc(100%/12*10);
   }
+
   .header-nav {
     width: calc(100%/12*0);
   }
+
   .h-name:before {
     content: "Katharina\00a0";
     display: inline-block;
   }
+
   nav {
     top: 105px;
   }
+
   .h-logo-letters {
     top: calc(80px/2 - 0.7*16*2*0.5px);
   }
-  #circle {
+
+  .circle {
     height: 80px;
     width: 80px;
   }
+
   .project {
     width: 33.33%;
     padding: 5px 20px 20px 20px;
   }
+
   .project:nth-child(3n+1) {
     padding-left: 0;
   }
+
   .project:nth-child(3n) {
     padding-right: 0;
   }
+
   .p-name {
     font-size: 1.2em;
     font-weight: 400;
-    margin: 0px;
+    margin: 0;
     color: #696767;
     text-transform: uppercase;
   }
 
   .p-link {
     font-size: 0.7em;
-    margin: 0px;
+    margin: 0;
     font-weight: 200;
     color: #696767;
     text-decoration: none;
   }
+
   .hero {
     margin-top: 110px;
   }
@@ -235,7 +271,7 @@ nav {
 
 
 .nav-link {
-  padding: 10px 0px 0px;
+  padding: 10px 0 0;
   vertical-align: bottom;
 }
 
@@ -249,41 +285,52 @@ nav {
  */
 .featured-work-header {
   font-size: 2em;
-  padding-left: 10px;
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 0 20px;
 }
 
-
-
 @media screen and (min-width: 801px) and (max-width: 1200px) {
-  html, body, header, nav, footer {
+  html, 
+  body, 
+  header, 
+  nav, 
+  footer {
     max-width: 801px;
   }
+
   .hero {
     margin-top: 110px;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  html, body {
+  html, 
+  body {
     width: 100%;
   }
-  main, header, nav {
+
+  main, 
+  header, 
+  nav {
     max-width: 66.6%;
     margin: 0 auto;
   }
+
   footer {
     max-width: 66.6%;
     margin: 0 auto 30px;
   }
-  header, nav {
+
+  header, 
+  nav {
     margin-left: 16.7%;
   }
+
   .hero {
-    width: 50%; 
+    width: 50%;
     margin-top: 160px;
     display: inline-block;
   }
+
   .projects-title {
     width: 50%;
     display: inline-block;

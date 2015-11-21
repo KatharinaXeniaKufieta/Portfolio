@@ -1,15 +1,11 @@
-/* 
- * This file specifies the style specific for screens up to 500px.
- * Optimizations are made at a minor break point at 400px.
- */
-#circle[href^="#ml-projects"] {
+.circle[href^="#ml-projects"] {
   display: none;
 }
 
-#circle {
+.circle {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
-  border-radius: 100%; 
+  border-radius: 100%;
   background-color: #69d2e7;
 }
 
@@ -17,4 +13,3 @@
   font-weight: 900;
   color: #212121;
 }
-

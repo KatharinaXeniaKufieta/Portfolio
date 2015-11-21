@@ -1,28 +1,35 @@
-/* 
- * This file specifies the style specific for screens up to 500px.
- * Optimizations are made at a minor break point at 400px.
+/*
+ * This file specifies the style specific for screen widths < 600px.
+ * Optimizations are made at several minor break point.
  */
-
 @media screen and (max-width: 350px) {
-  html, body {
+  html, 
+  body {
     font-size: 70%;
   }
-  h4, p {
+
+  h4, 
+  p {
     font-weight: 400;
   }
+
   .header-logo {
     width: calc(100%/12*3);
   }
+
   .header-name {
     width: calc(100%/12*6);
   }
+
   .header-nav {
     width: calc(100%/12*3);
   }
+
   .h-name:before {
     content: "K.\00a0";
     display: inline-block;
   }
+
   nav {
     top: 65px;
   }
@@ -31,43 +38,54 @@
     font-size: 2.5em;
     top: calc(50px/2 - 0.7*16*1.5*0.5px);
   }
-  #circle {
+
+  .circle {
     height: 50px;
     width: 50px;
   }
+
   .hero {
     margin-top: 75px;
   }
+
   .h-name {
     font-weight: 300;
     padding-top: 7px;
   }
 }
 
-
 @media screen and (min-width: 351px) and (max-width: 409px) {
-  html, body {
+  html, 
+  body {
     font-size: 75%;
   }
-  h4, p {
+
+  h4, 
+  p {
     font-weight: 400;
   }
+
   .header-logo {
     width: calc(100%/12*3);
   }
+
   .header-name {
     width: calc(100%/12*6);
   }
+
   .header-nav {
     width: calc(100%/12*3);
   }
+
   .h-name:before {
     content: "K.\00a0";
     display: inline-block;
   }
+
   .h-name {
     font-weight: 300;
   }
+
   nav {
     top: 70px;
   }
@@ -76,83 +94,104 @@
     font-size: 2.5em;
     top: calc(50px/2 - 0.7*16*2*0.5px);
   }
-  #circle {
+
+  .circle {
     height: 50px;
     width: 50px;
   }
+
   .hero {
     margin-top: 75px;
   }
 }
 
-
 @media screen and (min-width: 410px) and (max-width: 500px) {
-  html, body {
+  html, 
+  body {
     font-size: 80%;
   }
+
   .header-logo {
     width: calc(100%/12*2);
   }
+
   .header-name {
     width: calc(100%/12*8);
   }
+
   .header-nav {
     width: calc(100%/12*2);
   }
+
   .h-name:before {
     content: "Katharina\00a0";
     display: inline-block;
   }
+
   .h-name {
     font-weight: 200;
   }
+
   nav {
     top: 80px;
   }
+
   .h-logo-letters {
     font-size: 2.5em;
     top: calc(60px/2 - 0.7*16*2.5*0.5px);
   }
-  #circle {
+
+  .circle {
     height: 60px;
     width: 60px;
   }
+
   .hero {
     margin-top: 85px;
   }
 }
 
 @media screen and (min-width: 501px){
-  html, body {
+  html, 
+  body {
     font-size: 85%;
   }
+
   .header-logo {
     width: calc(100%/12*2);
   }
+
   .header-name {
     width: calc(100%/12*8);
   }
+
   .header-nav {
     width: calc(100%/12*2);
   }
+
   .h-name:before {
     content: "Katharina\00a0";
     display: inline-block;
   }
+
   .h-name {
     font-weight: 200;
   }
+
   nav {
     top: 91px;
   }
+
   .h-logo-letters {
     font-size: 2.5em;
     top: calc(70px/2 - 0.7*16*2.5*0.5px);
   }
-  #circle {
+
+  .circle {
     height: 70px;
     width: 70px;
   }
+
   .hero {
     margin-top: 100px;
   }
@@ -218,7 +257,6 @@ nav {
   transition: transform 0.3s ease;
 }
 
-
 .nav-item {
   width: 100%;
   text-align: left;
@@ -230,10 +268,8 @@ nav {
  */
 .featured-work-header {
   font-size: 2em;
-  padding-left: 10px;
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 0 20px;
 }
-
 
 .project {
   width: 100%;
@@ -243,14 +279,14 @@ nav {
 .p-name {
   font-size: 2em;
   font-weight: 400;
-  margin: 0px;
+  margin: 0;
   color: #696767;
   text-transform: uppercase;
 }
 
 .p-link {
   font-size: 1.5em;
-  margin: 0px;
+  margin: 0;
   font-weight: 300;
   color: #696767;
   text-decoration: none;

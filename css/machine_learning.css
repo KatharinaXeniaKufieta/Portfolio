@@ -1,15 +1,11 @@
-/* 
- * This file specifies the style specific for screens up to 500px.
- * Optimizations are made at a minor break point at 400px.
- */
-#circle[href^="#fend-projects"] {
+.circle[href^="#fend-projects"] {
   display: none;
 }
 
-#circle {
+.circle {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
-  border-radius: 100%; 
+  border-radius: 100%;
   background-image: url("../images_opt/logo/autumn-250-1x.jpg");
   background-size: cover;
 }

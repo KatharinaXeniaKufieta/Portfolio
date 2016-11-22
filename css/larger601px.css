@@ -3,7 +3,7 @@
  * Optimizations are made at several minor break point.
  */
 @media screen and (max-width: 700px) {
-  html, 
+  html,
   body {
     font-size: 95%;
   }
@@ -321,7 +321,7 @@ nav {
     margin: 0 auto 30px;
   }
 
-  header, 
+  header,
   nav {
     margin-left: 16.7%;
   }

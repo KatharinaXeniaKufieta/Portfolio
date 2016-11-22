@@ -93,7 +93,7 @@
 }
 
 @media screen and (min-width: 701px) and (max-width: 800px) {
-  html, 
+  html,
   body {
     font-size: 100%;
   }
@@ -276,7 +276,8 @@ nav {
 }
 
 .nav-item {
-  width: 24.7%;
+  // width: 24.7%;
+  width: 32.7%;
   text-align: center;
 }
 
@@ -289,10 +290,10 @@ nav {
 }
 
 @media screen and (min-width: 801px) and (max-width: 1200px) {
-  html, 
-  body, 
-  header, 
-  nav, 
+  html,
+  body,
+  header,
+  nav,
   footer {
     max-width: 801px;
   }
@@ -303,13 +304,13 @@ nav {
 }
 
 @media screen and (min-width: 1201px) {
-  html, 
+  html,
   body {
     width: 100%;
   }
 
-  main, 
-  header, 
+  main,
+  header,
   nav {
     max-width: 66.6%;
     margin: 0 auto;

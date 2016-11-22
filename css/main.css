@@ -22,9 +22,9 @@
  * Using html as selector: We can take advantage of being able to apply CSS
  * to the <html> element to skip the wrapper div and keep our markup clean.
  */
-body, 
-html, 
-main, 
+body,
+html,
+main,
 footer {
   margin: 0 auto; /* Centering the page */
   padding: 0;
@@ -37,19 +37,19 @@ body {
   font-size: 100%;
 }
 
-img, 
-embed, 
-object, 
-video, 
+img,
+embed,
+object,
+video,
 svg {
   max-width: 100%;
   max-height: 100%;
 }
 
-h1, 
-h3, 
-h4, 
-h5, 
+h1,
+h3,
+h4,
+h5,
 p {
   color: #696767;
   margin: 0;
@@ -72,9 +72,13 @@ h3 {
   font-weight: 400;
 }
 
-h4, 
+h4,
 p {
   font-weight: 300;
+}
+
+.invisible-element {
+  visibility: hidden
 }
 
 /*
@@ -119,7 +123,7 @@ header {
 /*
  * Navigation
  */
-nav a, 
+nav a,
 button {
   min-width: 48px;
   min-height: 48px;

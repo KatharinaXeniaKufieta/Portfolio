@@ -301,6 +301,32 @@ footer {
   color: #212121;
 }
 
+/*
+ * Modal
+ */
+.description-modal {
+  padding: 10px;
+}
+
+.p-modal {
+  margin: 10px 0;
+}
+
+.a-modal {
+  font-size: 0.9em;
+  padding: 0 20px 0 0;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #02b3e4;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.skills-modal {
+  padding: 0 10px 0 0;
+  font-weight: 400;
+}
+
 /***********************
  * Grid, Rows, Columns *
  ***********************/

@@ -89,6 +89,11 @@ module.exports = function(grunt) {
           src: ['*.{gif,jpg,png}'],
           cwd: 'images_src/machine_learning',
           dest: 'images/machine_learning'
+        }, {
+          expand: true,
+          src: ['*.{gif,jpg,png}'],
+          cwd: 'images_src/creativity',
+          dest: 'images/creativity'
         }]
       }
     },

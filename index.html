@@ -1,274 +1,244 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katharina Kufieta Portfolio</title>
-    <script src="js/jquery-1.11.3.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="//normalize-css.googlecode.com/svn/trunk/normalize.min.css">
-    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=entypo">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:900,400,300,100">
-    <link rel="stylesheet" href="css/main.min.css">
-    <link id="fend-css" rel="stylesheet" href="css/front_end.min.css">
-    <link id="ml-css" rel="stylesheet" href="css/machine_learning.min.css">
-    <link id="skills-css" rel="stylesheet" href="css/skills.min.css">
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/smaller600px.min.css">
-    <link rel="stylesheet" media="screen and (min-width: 601px)" href="css/larger601px.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-  </head>
-  <body>
 
-    <header id="header-id" class="row">
-      <div class="header-logo">
-        <a class="h-logo circle" href="#fend-projects"></a>
-        <a class="h-logo circle" href="#ml-projects"></a>
-        <h1 class="h-logo-letters">KK</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katharina Kufieta Portfolio</title>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+    integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="//normalize-css.googlecode.com/svn/trunk/normalize.min.css">
+  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=entypo">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:900,400,300,100">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link id="fend-css" rel="stylesheet" href="css/front_end.min.css">
+  <link id="ml-css" rel="stylesheet" href="css/machine_learning.min.css">
+  <link id="skills-css" rel="stylesheet" href="css/skills.min.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/smaller600px.min.css">
+  <link rel="stylesheet" media="screen and (min-width: 601px)" href="css/larger601px.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <header id="header-id" class="row">
+    <div class="header-logo">
+      <a class="h-logo circle" href="#fend-projects"></a>
+      <a class="h-logo circle" href="#ml-projects"></a>
+      <h1 class="h-logo-letters">KK</h1>
+    </div>
+    <div class="header-name">
+      <h1 class="h-name">Kufieta</h1>
+      <h1 id="occupation" class="h-occupation">FRONT-END NINJA</h1>
+    </div>
+    <a id="menu" class="header-nav entypo-menu"></a>
+  </header>
+
+  <nav id="drawer" class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a id="nav-fend" class="nav-link" href="#fend-projects">Front End</a>
+      </li>
+      <li class="nav-item">
+        <a id="nav-ml" class="nav-link" href="#ml-projects">Creativity</a>
+      </li>
+      <li class="nav-item">
+        <a id="nav-skills" class="nav-link" href="#skills-id">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact-id">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="col-12">
+        <picture id="fend-projects">
+          <source media="(min-width: 601px)"
+            srcset="images_opt/front_end/keyboard-805-1x.jpg 1x, images_opt/front_end/keyboard-805-2x.jpg 2x">
+          <source media="(min-width: 401px)"
+            srcset="images_opt/front_end/keyboard-600-1x.jpg 1x, images_opt/front_end/keyboard-600-2x.jpg 2x">
+          <img alt="Hero picture: Apple Macbook Pro keyboard with backlight on."
+            src="images_opt/front_end/keyboard-400-1x.jpg"
+            srcseo="images_opt/front_end/keyboard-400-1x.jpg 1x, images_opt/front_end/keyboard-400-2x.jpg 2x">
+        </picture>
       </div>
-      <div class="header-name">
-        <h1 class="h-name">Kufieta</h1>
-        <h1 id="occupation" class="h-occupation">FRONT-END NINJA</h1>
+    </section>
+
+    <section class="row projects-title">
+      <div class="col-12">
+        <h2 class="featured-work-header">Front End: Featured Work</h2>
       </div>
-      <a id="menu" class="header-nav entypo-menu"></a>
-    </header>
+    </section>
 
-    <nav id="drawer" class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a id="nav-fend" class="nav-link" href="#fend-projects">Front End</a>
-        </li>
-        <li class="nav-item">
-          <a id="nav-ml" class="nav-link" href="#ml-projects">Creativity</a>
-        </li>
-        <li class="nav-item">
-          <a id="nav-skills" class="nav-link" href="#skills-id">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact-id">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
-    <main>
-      <section class="hero">
-        <div class="col-12">
-          <picture id="fend-projects">
-            <source
-              media="(min-width: 601px)"
-              srcset="images_opt/front_end/keyboard-805-1x.jpg 1x, images_opt/front_end/keyboard-805-2x.jpg 2x">
-            <source
-              media="(min-width: 401px)"
-              srcset="images_opt/front_end/keyboard-600-1x.jpg 1x, images_opt/front_end/keyboard-600-2x.jpg 2x">
-            <img
-              alt="Hero picture: Apple Macbook Pro keyboard with backlight on."
-              src="images_opt/front_end/keyboard-400-1x.jpg"
-              srcseo="images_opt/front_end/keyboard-400-1x.jpg 1x, images_opt/front_end/keyboard-400-2x.jpg 2x">
-          </picture>
-        </div>
-      </section>
-
-      <section class="row projects-title">
-        <div class="col-12">
-          <h2 class="featured-work-header">Front-End: Featured Work</h2>
-        </div>
-      </section>
-
-      <section class="featured-work">
-        <div class="project img-responsive center-block">
-          <div data-toggle="modal" data-target="#project1-fend">
-            <picture>
-              <source
-                media="(min-width: 1201px)"
-                srcset="images_opt/front_end/cari-400-1x.png 1x, images_opt/front_end/cari-400-2x.png 2x">
-              <source
-                media="(min-width: 701px)"
-                srcset="images_opt/front_end/cari-250-1x.png 1x, images_opt/front_end/cari-250-2x.png 2x">
-              <source
-                media="(min-width: 601px)"
-                srcset="images_opt/front_end/cari-360-1x.png 1x, images_opt/front_end/cari-360-2x.png 2x">
-              <source
-                media="(min-width: 401px)"
-                srcset="images_opt/front_end/cari-600-1x.png 1x, images_opt/front_end/cari-600-2x.png 2x">
-              <img
-                alt="Seam carving picture: Surfer with red seams around him."
-                src="images_opt/front_end/application-360-1x.png"
-                srcset="images_opt/front_end/cari-360-1x.png 1x, images_opt/front_end/cari-360-2x.png 2x">
-            </picture>
-            <h3 class="p-name">Content Aware Image Resizing</h3>
-          </div>
-          <a class="p-link" target="_blank" href="https://github.com/kkufieta/cari">https://github.com/kkufieta/cari</a>
-        </div>
-        <div class="project img-responsive">
-          <div data-toggle="modal" data-target="#project2-fend">
-            <picture>
-              <source
-                media="(min-width: 1201px)"
-                srcset="images_opt/front_end/bugs_long-400-1x.png 1x, images_opt/front_end/bugs_long-400-2x.png 2x">
-              <source
-                media="(min-width: 701px)"
-                srcset="images_opt/front_end/bugs_long-250-1x.png 1x, images_opt/front_end/bugs_long-250-2x.png 2x">
-              <source
-                media="(min-width: 601px)"
-                srcset="images_opt/front_end/bugs_long-360-1x.png 1x, images_opt/front_end/bugs_long-360-2x.png 2x">
-              <source
-                media="(min-width: 401px)"
-                srcset="images_opt/front_end/bugs_long-600-1x.png 1x, images_opt/front_end/bugs_long-600-2x.png 2x">
-              <img
-                alt="Arcade game clone application picture: Bugs and char boy."
-                src="images_opt/front_end/bugs_long-360-1x.png"
-                srcset="images_opt/front_end/bugs_long-360-1x.png 1x, images_opt/front_end/bugs_long-360-2x.png 2x">
-            </picture>
-            <h3 class="p-name">Arcade Game Clone</h3>
-          </div>
-          <a class="p-link" target="_blank" href="https://github.com/kkufieta/arcadeGameBugs">https://github.com/kkufieta/arcadeGameBugs</a>
-        </div>
-        <div class="project img-responsive">
-          <div data-toggle="modal" data-target="#project3-fend">
-            <picture>
-              <source
-                media="(min-width: 1201px)"
-                srcset="images_opt/front_end/map-400-1x.png 1x, images_opt/front_end/map-400-2x.png 2x">
-              <source
-                media="(min-width: 701px)"
-                srcset="images_opt/front_end/map-250-1x.png 1x, images_opt/front_end/map-250-2x.png 2x">
-              <source
-                media="(min-width: 601px)"
-                srcset="images_opt/front_end/map-360-1x.png 1x, images_opt/front_end/map-360-2x.png 2x">
-              <source
-                media="(min-width: 401px)"
-                srcset="images_opt/front_end/map-600-1x.png 1x, images_opt/front_end/map-600-2x.png 2x">
-              <img
-                alt="Neightborhood map project application picture: Screenshot of neighborhood map."
-                src="images_opt/front_end/map-360-1x.png"
-                srcset="images_opt/front_end/map-360-1x.png 1x, images_opt/front_end/map-360-2x.png 2x">
-            </picture>
-            <h3 class="p-name">Neighborhood Map Project</h3>
-          </div>
-          <a class="p-link" target="_blank" href="https://github.com/kkufieta/neighborhoodMap">https://github.com/kkufieta/neighborhoodMap</a>
-        </div>
-        <div class="project img-responsive">
-          <div data-toggle="modal" data-target="#project4-fend">
-            <picture>
-              <source
-                media="(min-width: 1201px)"
-                srcset="images_opt/front_end/weboptimization-400-1x.png 1x, images_opt/front_end/weboptimization-400-2x.png 2x">
-              <source
-                media="(min-width: 701px)"
-                srcset="images_opt/front_end/weboptimization-250-1x.png 1x, images_opt/front_end/weboptimization-250-2x.png 2x">
-              <source
-                media="(min-width: 601px)"
-                srcset="images_opt/front_end/weboptimization-360-1x.png 1x, images_opt/front_end/weboptimization-360-2x.png 2x">
-              <source
-                media="(min-width: 401px)"
-                srcset="images_opt/front_end/weboptimization-600-1x.png 1x, images_opt/front_end/weboptimization-600-2x.png 2x">
-              <img
-                alt="Website optimization application picture: Screenshot of timeline capturing."
-                src="images_opt/front_end/weboptimization-360-1x.png"
-                srcset="images_opt/front_end/weboptimization-360-1x.png 1x, images_opt/front_end/weboptimization-360-2x.png 2x">
-            </picture>
-            <h3 class="p-name">Website Optimization</h3>
-          </div>
-          <a class="p-link" target="_blank" href="https://github.com/kkufieta/mobilePortfolio">https://github.com/kkufieta/mobilePortfolio</a>
-        </div>
-        <div class="project img-responsive">
-          <div data-toggle="modal" data-target="#project5-fend">
-            <picture>
-              <source
-                media="(min-width: 1201px)"
-                srcset="images_opt/front_end/resume-400-1x.png 1x, images_opt/front_end/resume-400-2x.png 2x">
-              <source
-                media="(min-width: 701px)"
-                srcset="images_opt/front_end/resume-250-1x.png 1x, images_opt/front_end/resume-250-2x.png 2x">
-              <source
-                media="(min-width: 601px)"
-                srcset="images_opt/front_end/resume-360-1x.png 1x, images_opt/front_end/resume-360-2x.png 2x">
-              <source
-                media="(min-width: 401px)"
-                srcset="images_opt/front_end/resume-600-1x.png 1x, images_opt/front_end/resume-600-2x.png 2x">
-              <img
-                alt="Resume picture: Screenshot of my online resume."
-                src="images_opt/front_end/resume-360-1x.png"
-                srcset="images_opt/front_end/resume-360-1x.png 1x, images_opt/front_end/resume-360-2x.png 2x">
-            </picture>
-            <h3 class="p-name">Resume</h3>
-          </div>
-          <a class="p-link" target="_blank" href="https://github.com/kkufieta/resume">https://github.com/kkufieta/resume</a>
-        </div>
-        <div class="project img-responsive">
-          <div data-toggle="modal" data-target="#project6-fend">
-            <picture>
-              <source
-                media="(min-width: 1201px)"
-                srcset="images_opt/front_end/testing-400-1x.png 1x, images_opt/front_end/testing-400-2x.png 2x">
-              <source
-                media="(min-width: 701px)"
-                srcset="images_opt/front_end/testing-250-1x.png 1x, images_opt/front_end/testing-250-2x.png 2x">
-              <source
-                media="(min-width: 601px)"
-                srcset="images_opt/front_end/testing-360-1x.png 1x, images_opt/front_end/testing-360-2x.png 2x">
-              <source
-                media="(min-width: 401px)"
-                srcset="images_opt/front_end/testing-600-1x.png 1x, images_opt/front_end/testing-600-2x.png 2x">
-              <img
-                alt="Feed reader testing application picture: Screenshot of jasmine tests."
-                src="images_opt/front_end/testing-360-1x.png"
-                srcset="images_opt/front_end/testing-360-1x.png 1x, images_opt/front_end/testing-360-2x.png 2x">
-            </picture>
-            <h3 class="p-name">Feed Reader Testing</h3>
-          </div>
-          <a class="p-link" target="_blank" href="https://github.com/kkufieta/feedreader">https://github.com/kkufieta/feedreader</a>
-        </div>
-      </section>
-
-      <section class="hero">
-        <div class="col-12" id="ml-projects">
+    <section class="featured-work">
+      <div class="project img-responsive center-block">
+        <div data-toggle="modal" data-target="#project1-fend">
           <picture>
-            <source
-              media="(min-width: 601px)"
-              srcset="images_opt/machine_learning/machine_learning-805-1x.jpg 1x, images_opt/machine_learning/machine_learning-805-2x.jpg 2x">
-            <source
-              media="(min-width: 401px)"
-              srcset="images_opt/machine_learning/machine_learning-600-1x.jpg 1x, images_opt/machine_learning/machine_learning-600-2x.jpg 2x">
-            <img
-              alt="Hero picture: A tiny robot holding a RAM card in its hands while standing next to a Apple Macbook."
-              src="images_opt/machine_learning/machine_learning-400-1x.jpg"
-              srcset="images_opt/machine_learning/machine_learning-400-1x.jpg 1x, images_opt/machine_learning/machine_learning-400-2x.jpg 2x">
+            <source media="(min-width: 1201px)"
+              srcset="images_opt/front_end/cari-400-1x.png 1x, images_opt/front_end/cari-400-2x.png 2x">
+            <source media="(min-width: 701px)"
+              srcset="images_opt/front_end/cari-250-1x.png 1x, images_opt/front_end/cari-250-2x.png 2x">
+            <source media="(min-width: 601px)"
+              srcset="images_opt/front_end/cari-360-1x.png 1x, images_opt/front_end/cari-360-2x.png 2x">
+            <source media="(min-width: 401px)"
+              srcset="images_opt/front_end/cari-600-1x.png 1x, images_opt/front_end/cari-600-2x.png 2x">
+            <img alt="Seam carving picture: Surfer with red seams around him."
+              src="images_opt/front_end/application-360-1x.png"
+              srcset="images_opt/front_end/cari-360-1x.png 1x, images_opt/front_end/cari-360-2x.png 2x">
           </picture>
-          <a class="copyright" href="https://www.flickr.com/photos/isherwoodchris/6917253693/in/photolist-bxfJwH-6MTRz-6XG31P-L5jUK-7XQQHY-7Uxhx9-5VPLh7-d2EUi-81MXJq-dSrHa-2Sb7c-DkL-7xkD-eax6ap-a9HrBK-4YaDp7-NA5rP-hKwyn-5Drouk-8NYffe-cfv5qj-863fGt-4GLf8H-3LFq7z-B1Vr2-7Lnf4x-eEuk9H-bWU5c4-eeaNLg-6KYR2s-EHyap-re5gdc-CBNN3-93GQEQ-mbgr4-gmwxeQ-yj2ZFA-7B1Kkj-dcBE4C-e4wbyv-tyKQ-iCXT3-7Nojam-AAKAq-8NYNaD-6pBD5-wapWxJ-b5cc2R-73u2YE-vJDpB"><p>© (cc) 2012-2015 Chris Isherwood</p></a>
+          <h3 class="p-name">Content Aware Image Resizing</h3>
         </div>
-      </section>
-
-      <section class="row projects-title">
-        <div class="col-12">
-          <h2 class="featured-work-header">Creativity: Featured Work</h2>
-        </div>
-      </section>
-
-      <section class="featured-work">
-        <div class="project img-responsive" data-toggle="modal" data-target="#project1-ml">
+        <a class="p-link" target="_blank" href="https://github.com/kkufieta/cari">https://github.com/kkufieta/cari</a>
+      </div>
+      <div class="project img-responsive">
+        <div data-toggle="modal" data-target="#project2-fend">
           <picture>
-            <source
-              media="(min-width: 1201px)"
-              srcset="images_opt/creativity/dress-400-1x.jpg 1x, images_opt/creativity/dress-400-2x.jpg 2x">
-            <source
-              media="(min-width: 701px)"
-              srcset="images_opt/creativity/dress-250-1x.jpg 1x, images_opt/creativity/dress-250-2x.jpg 2x">
-            <source
-              media="(min-width: 601px)"
-              srcset="images_opt/creativity/dress-360-1x.jpg 1x, images_opt/creativity/dress-360-2x.jpg 2x">
-            <source
-              media="(min-width: 401px)"
-              srcset="images_opt/creativity/dress-600-1x.jpg 1x, images_opt/creativity/dress-600-2x.jpg 2x">
-            <img
-              alt="Predicting dress Housing Prices application picture: A beautiful building located in dress."
-              src="images_opt/creativity/dress-360-1x.jpg"
-              srcset="images_opt/creativity/dress-360-1x.jpg 1x, images_opt/creativity/dress-360-2x.jpg 2x">
+            <source media="(min-width: 1201px)"
+              srcset="images_opt/front_end/bugs_long-400-1x.png 1x, images_opt/front_end/bugs_long-400-2x.png 2x">
+            <source media="(min-width: 701px)"
+              srcset="images_opt/front_end/bugs_long-250-1x.png 1x, images_opt/front_end/bugs_long-250-2x.png 2x">
+            <source media="(min-width: 601px)"
+              srcset="images_opt/front_end/bugs_long-360-1x.png 1x, images_opt/front_end/bugs_long-360-2x.png 2x">
+            <source media="(min-width: 401px)"
+              srcset="images_opt/front_end/bugs_long-600-1x.png 1x, images_opt/front_end/bugs_long-600-2x.png 2x">
+            <img alt="Arcade game clone application picture: Bugs and char boy."
+              src="images_opt/front_end/bugs_long-360-1x.png"
+              srcset="images_opt/front_end/bugs_long-360-1x.png 1x, images_opt/front_end/bugs_long-360-2x.png 2x">
           </picture>
-          <h3 class="p-name">Sparkling Dress</h3>
-          <!--a class="p-link" href="#">https://github.com/kkufieta</a-->
+          <h3 class="p-name">Arcade Game Clone</h3>
         </div>
-        <!--div class="project img-responsive" data-toggle="modal" data-target="#project2-ml">
+        <a class="p-link" target="_blank"
+          href="https://github.com/kkufieta/arcadeGameBugs">https://github.com/kkufieta/arcadeGameBugs</a>
+      </div>
+      <div class="project img-responsive">
+        <div data-toggle="modal" data-target="#project3-fend">
+          <picture>
+            <source media="(min-width: 1201px)"
+              srcset="images_opt/front_end/map-400-1x.png 1x, images_opt/front_end/map-400-2x.png 2x">
+            <source media="(min-width: 701px)"
+              srcset="images_opt/front_end/map-250-1x.png 1x, images_opt/front_end/map-250-2x.png 2x">
+            <source media="(min-width: 601px)"
+              srcset="images_opt/front_end/map-360-1x.png 1x, images_opt/front_end/map-360-2x.png 2x">
+            <source media="(min-width: 401px)"
+              srcset="images_opt/front_end/map-600-1x.png 1x, images_opt/front_end/map-600-2x.png 2x">
+            <img alt="Neightborhood map project application picture: Screenshot of neighborhood map."
+              src="images_opt/front_end/map-360-1x.png"
+              srcset="images_opt/front_end/map-360-1x.png 1x, images_opt/front_end/map-360-2x.png 2x">
+          </picture>
+          <h3 class="p-name">Neighborhood Map Project</h3>
+        </div>
+        <a class="p-link" target="_blank"
+          href="https://github.com/kkufieta/neighborhoodMap">https://github.com/kkufieta/neighborhoodMap</a>
+      </div>
+      <div class="project img-responsive">
+        <div data-toggle="modal" data-target="#project4-fend">
+          <picture>
+            <source media="(min-width: 1201px)"
+              srcset="images_opt/front_end/weboptimization-400-1x.png 1x, images_opt/front_end/weboptimization-400-2x.png 2x">
+            <source media="(min-width: 701px)"
+              srcset="images_opt/front_end/weboptimization-250-1x.png 1x, images_opt/front_end/weboptimization-250-2x.png 2x">
+            <source media="(min-width: 601px)"
+              srcset="images_opt/front_end/weboptimization-360-1x.png 1x, images_opt/front_end/weboptimization-360-2x.png 2x">
+            <source media="(min-width: 401px)"
+              srcset="images_opt/front_end/weboptimization-600-1x.png 1x, images_opt/front_end/weboptimization-600-2x.png 2x">
+            <img alt="Website optimization application picture: Screenshot of timeline capturing."
+              src="images_opt/front_end/weboptimization-360-1x.png"
+              srcset="images_opt/front_end/weboptimization-360-1x.png 1x, images_opt/front_end/weboptimization-360-2x.png 2x">
+          </picture>
+          <h3 class="p-name">Website Optimization</h3>
+        </div>
+        <a class="p-link" target="_blank"
+          href="https://github.com/kkufieta/mobilePortfolio">https://github.com/kkufieta/mobilePortfolio</a>
+      </div>
+      <div class="project img-responsive">
+        <div data-toggle="modal" data-target="#project5-fend">
+          <picture>
+            <source media="(min-width: 1201px)"
+              srcset="images_opt/front_end/resume-400-1x.png 1x, images_opt/front_end/resume-400-2x.png 2x">
+            <source media="(min-width: 701px)"
+              srcset="images_opt/front_end/resume-250-1x.png 1x, images_opt/front_end/resume-250-2x.png 2x">
+            <source media="(min-width: 601px)"
+              srcset="images_opt/front_end/resume-360-1x.png 1x, images_opt/front_end/resume-360-2x.png 2x">
+            <source media="(min-width: 401px)"
+              srcset="images_opt/front_end/resume-600-1x.png 1x, images_opt/front_end/resume-600-2x.png 2x">
+            <img alt="Resume picture: Screenshot of my online resume." src="images_opt/front_end/resume-360-1x.png"
+              srcset="images_opt/front_end/resume-360-1x.png 1x, images_opt/front_end/resume-360-2x.png 2x">
+          </picture>
+          <h3 class="p-name">Resume</h3>
+        </div>
+        <a class="p-link" target="_blank"
+          href="https://github.com/kkufieta/resume">https://github.com/kkufieta/resume</a>
+      </div>
+      <div class="project img-responsive">
+        <div data-toggle="modal" data-target="#project6-fend">
+          <picture>
+            <source media="(min-width: 1201px)"
+              srcset="images_opt/front_end/testing-400-1x.png 1x, images_opt/front_end/testing-400-2x.png 2x">
+            <source media="(min-width: 701px)"
+              srcset="images_opt/front_end/testing-250-1x.png 1x, images_opt/front_end/testing-250-2x.png 2x">
+            <source media="(min-width: 601px)"
+              srcset="images_opt/front_end/testing-360-1x.png 1x, images_opt/front_end/testing-360-2x.png 2x">
+            <source media="(min-width: 401px)"
+              srcset="images_opt/front_end/testing-600-1x.png 1x, images_opt/front_end/testing-600-2x.png 2x">
+            <img alt="Feed reader testing application picture: Screenshot of jasmine tests."
+              src="images_opt/front_end/testing-360-1x.png"
+              srcset="images_opt/front_end/testing-360-1x.png 1x, images_opt/front_end/testing-360-2x.png 2x">
+          </picture>
+          <h3 class="p-name">Feed Reader Testing</h3>
+        </div>
+        <a class="p-link" target="_blank"
+          href="https://github.com/kkufieta/feedreader">https://github.com/kkufieta/feedreader</a>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="col-12" id="ml-projects">
+        <picture>
+          <source media="(min-width: 601px)"
+            srcset="images_opt/machine_learning/machine_learning-805-1x.jpg 1x, images_opt/machine_learning/machine_learning-805-2x.jpg 2x">
+          <source media="(min-width: 401px)"
+            srcset="images_opt/machine_learning/machine_learning-600-1x.jpg 1x, images_opt/machine_learning/machine_learning-600-2x.jpg 2x">
+          <img alt="Hero picture: A tiny robot holding a RAM card in its hands while standing next to a Apple Macbook."
+            src="images_opt/machine_learning/machine_learning-400-1x.jpg"
+            srcset="images_opt/machine_learning/machine_learning-400-1x.jpg 1x, images_opt/machine_learning/machine_learning-400-2x.jpg 2x">
+        </picture>
+        <a class="copyright"
+          href="https://www.flickr.com/photos/isherwoodchris/6917253693/in/photolist-bxfJwH-6MTRz-6XG31P-L5jUK-7XQQHY-7Uxhx9-5VPLh7-d2EUi-81MXJq-dSrHa-2Sb7c-DkL-7xkD-eax6ap-a9HrBK-4YaDp7-NA5rP-hKwyn-5Drouk-8NYffe-cfv5qj-863fGt-4GLf8H-3LFq7z-B1Vr2-7Lnf4x-eEuk9H-bWU5c4-eeaNLg-6KYR2s-EHyap-re5gdc-CBNN3-93GQEQ-mbgr4-gmwxeQ-yj2ZFA-7B1Kkj-dcBE4C-e4wbyv-tyKQ-iCXT3-7Nojam-AAKAq-8NYNaD-6pBD5-wapWxJ-b5cc2R-73u2YE-vJDpB">
+          <p>© (cc) 2012-2015 Chris Isherwood</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="row projects-title">
+      <div class="col-12">
+        <h2 class="featured-work-header">Creativity: Featured Work</h2>
+      </div>
+    </section>
+
+    <section class="featured-work">
+      <div class="project img-responsive" data-toggle="modal" data-target="#project1-ml">
+        <picture>
+          <source media="(min-width: 1201px)"
+            srcset="images_opt/creativity/dress-400-1x.jpg 1x, images_opt/creativity/dress-400-2x.jpg 2x">
+          <source media="(min-width: 701px)"
+            srcset="images_opt/creativity/dress-250-1x.jpg 1x, images_opt/creativity/dress-250-2x.jpg 2x">
+          <source media="(min-width: 601px)"
+            srcset="images_opt/creativity/dress-360-1x.jpg 1x, images_opt/creativity/dress-360-2x.jpg 2x">
+          <source media="(min-width: 401px)"
+            srcset="images_opt/creativity/dress-600-1x.jpg 1x, images_opt/creativity/dress-600-2x.jpg 2x">
+          <img alt="Predicting dress Housing Prices application picture: A beautiful building located in dress."
+            src="images_opt/creativity/dress-360-1x.jpg"
+            srcset="images_opt/creativity/dress-360-1x.jpg 1x, images_opt/creativity/dress-360-2x.jpg 2x">
+        </picture>
+        <h3 class="p-name">Sparkling Dress</h3>
+        <!--a class="p-link" href="#">https://github.com/kkufieta</a-->
+      </div>
+      <!--div class="project img-responsive" data-toggle="modal" data-target="#project2-ml">
           <picture>
             <source
               media="(min-width: 1201px)"
@@ -334,348 +304,418 @@
           <h3 class="p-name">Design a Game</h3>
           <a class="p-link" href="#">https://github.com/kkufieta</a>
         </div-->
+    </section>
+
+    <article class="resume row">
+      <div id="skills-id" class="col-12">
+        <h2>Skills</h2>
+      </div>
+      <section class="skills">
+        <h3>Front-End</h3>
+        <ul>
+          <li>
+            <p>JavaScript, HTML, CSS</p>
+          </li>
+          <li>
+            <p>Bootstrap, Materialize</p>
+          </li>
+          <li>
+            <p>Knockout.js</p>
+          </li>
+          <li>
+            <p>Jasmine</p>
+          </li>
+          <li>
+            <p>JQuery, AJAX, Grunt</p>
+          </li>
+        </ul>
       </section>
+      <section class="skills">
+        <h3 class="invisible-element">Front-End</h3>
+        <ul>
+          <li>
+            <p>Chrome Developer Tools</p>
+          </li>
+          <li>
+            <p>60FPS rendering</p>
+          </li>
+          <li>
+            <p>Critical Rendering Path</p>
+          </li>
+        </ul>
+      </section>
+      <section class="skills">
+        <h3>Other</h3>
+        <ul>
+          <li>
+            <p>Matlab, Simulink, R</p>
+          </li>
+          <li>
+            <p>C++, Python, Squirrel, Kivy, Bash</p>
+          </li>
+          <li>
+            <p>Mercurial, Git</p>
+          </li>
+          <li>
+            <p>Arduino Uno, Adafruit Flora, Electric Imp, XBee</p>
+          </li>
+        </ul>
+      </section>
+    </article>
 
-      <article class="resume row">
-        <div id="skills-id" class="col-12"><h2>Skills</h2></div>
-        <section class="skills">
-          <h3>Front-End</h3>
-          <ul>
-            <li><p>JavaScript, HTML, CSS</p></li>
-            <li><p>Bootstrap, Materialize</p></li>
-            <li><p>Knockout.js</p></li>
-            <li><p>Jasmine</p></li>
-            <li><p>JQuery, AJAX, Grunt</p></li>
-          </ul>
-        </section>
-        <section class="skills">
-          <h3 class="invisible-element">Front-End</h3>
-          <ul>
-            <li><p>Chrome Developer Tools</p></li>
-            <li><p>60FPS rendering</p></li>
-            <li><p>Critical Rendering Path</p></li>
-          </ul>
-        </section>
-        <section class="skills">
-          <h3>Other</h3>
-          <ul>
-            <li><p>Matlab, Simulink, R</p></li>
-            <li><p>C++, Python, Squirrel, Kivy, Bash</p></li>
-            <li><p>Mercurial, Git</p></li>
-            <li><p>Arduino Uno, Adafruit Flora, Electric Imp, XBee</p></li>
-          </ul>
-        </section>
-      </article>
+  </main>
 
-    </main>
+  <footer id="contact-id" class="contact row">
+    <a class="col-4 entypo-linkedin" target="_blank" href="https://www.linkedin.com/in/katharinakufieta">LinkedIn</a>
+    <a class="col-4 entypo-github" target="_blank" href="https://github.com/kkufieta">Github</a>
+  </footer>
 
-    <footer id="contact-id" class="contact row">
-      <a class="col-4 entypo-linkedin" target="_blank" href="https://www.linkedin.com/in/katharinakufieta">LinkedIn</a>
-      <a class="col-4 entypo-github" target="_blank" href="https://github.com/kkufieta">Github</a>
-    </footer>
+  <!-- Modal Project 1 FEND-->
+  <div class="modal fade" id="project1-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1-fend"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-uppercase" id="myModalLabel1-fend">Content Aware Image Resizing</h2>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="images_opt/front_end/cari-400-2x.png"
+            alt="Screenshot of seamcarving: surfer with red seams around him.">
+          <div class="description-modal">
+            <a class="a-modal" target="_blank" href="https://github.com/kkufieta/cari">Github</a>
+            <!--a class="a-modal" target="_blank" href="http://kkufieta.github.io/cari/">Project Link</a-->
+            <p class="p-modal"><span class="skills-modal">JavaScript</span> <span class="skills-modal">HTML</span><span
+                class="skills-modal">CSS</span><span class="skills-modal">Knockout</span><span
+                class="skills-modal">Materialize</span></p>
+            <p class="p-modal">This application reduces the size of an image while preserving the most important
+              content in it by using
+              the Seam Carving Algorithm.
+              It is a single-page web application built using the Knockout framework. Users can upload an image and
+              specify the target size. The
+              algorithm then resizes the image in a content-aware manner, aiming to delete seams with a small energy
+              gradient first.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Modal Project 1 FEND-->
-    <div class="modal fade" id="project1-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1-fend" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title text-uppercase" id="myModalLabel1-fend">Content Aware Image Resizing</h2>
+  <!-- Modal Project 2 FEND-->
+  <div class="modal fade" id="project2-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2-fend"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-uppercase" id="myModalLabel2-fend">Arcade Game Clone</h2>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="images_opt/front_end/bugs-360-2x.png"
+            alt="Screenshot of arcade game: bugs and char boy.">
+          <div class="description-modal">
+            <a class="a-modal" target="_blank" href="https://github.com/kkufieta/arcadeGameBugs">Github</a>
+            <a class="a-modal" target="_blank" href="http://kkufieta.github.io/arcadeGameBugs/">Project Link</a>
+            <p class="p-modal"><span class="skills-modal">JavaScript</span> <span class="skills-modal">HTML5
+                Canvas</span><span class="skills-modal">Obect-Oriented Programming</span></p>
+            <p class="p-modal">An HTML5 Canvas powered video game, developed using the best practices in Object Oriented
+              JavaScript.</p>
           </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="images_opt/front_end/cari-400-2x.png" alt="Screenshot of seamcarving: surfer with red seams around him.">
-            <div class="description-modal">
-              <a class="a-modal" target="_blank" href="https://github.com/kkufieta/cari">Github</a>
-              <a class="a-modal" target="_blank" href="http://kkufieta.github.io/cari/">Project Link</a>
-              <p class="p-modal"><span class="skills-modal">JavaScript</span> <span class="skills-modal">HTML</span><span class="skills-modal">CSS</span><span class="skills-modal">Knockout</span><span class="skills-modal">Materialize</span></p>
-              <p class="p-modal">A single-page web application, built using the Knockout framework, that allows the user to experience seam carving in the browser. Users can upload an image and specify the target size. The algorithm then resizes the image in a content-aware manner, aiming to delete seams with a small energy gradient first.</p>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-
-    <!-- Modal Project 2 FEND-->
-    <div class="modal fade" id="project2-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2-fend" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title text-uppercase" id="myModalLabel2-fend">Arcade Game Clone</h2>
+  </div>
+  <!-- Modal Project 3 FEND-->
+  <div class="modal fade" id="project3-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3-fend"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-uppercase" id="myModalLabel3-fend">Neighborhood Map Project</h2>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="images_opt/front_end/map-400-2x.png"
+            alt="Screenshot of neighborhood map: NYC with Kathis favorite locations.">
+          <div class="description-modal">
+            <a class="a-modal" target="_blank" href="https://github.com/kkufieta/neighborhoodMap">Github</a>
+            <a class="a-modal" target="_blank" href="http://kkufieta.github.io/neighborhoodMap">Project Link</a>
+            <p class="p-modal"><span class="skills-modal">JavaScript</span> <span class="skills-modal">HTML</span><span
+                class="skills-modal">CSS</span><span class="skills-modal">Knockout</span><span
+                class="skills-modal">AJAX</span><span class="skills-modal">JavaScript frameworks</span></p>
+            <p class="p-modal">A single-page web application, built using the Knockout framework, that displays a Google
+              Map of NYC and various points of interest. Users can search all included landmarks and, when selected,
+              additional information about a landmark is presented from the FourSquare API. Other APIs included are
+              Giphy (for entertainment) and Yr.no (for a NYC weather report).</p>
           </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="images_opt/front_end/bugs-360-2x.png" alt="Screenshot of arcade game: bugs and char boy.">
-            <div class="description-modal">
-              <a class="a-modal" target="_blank" href="https://github.com/kkufieta/arcadeGameBugs">Github</a>
-              <a class="a-modal" target="_blank" href="http://kkufieta.github.io/arcadeGameBugs/">Project Link</a>
-              <p class="p-modal"><span class="skills-modal">JavaScript</span> <span class="skills-modal">HTML5 Canvas</span><span class="skills-modal">Obect-Oriented Programming</span></p>
-              <p class="p-modal">An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.</p>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-    <!-- Modal Project 3 FEND-->
-    <div class="modal fade" id="project3-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3-fend" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title text-uppercase" id="myModalLabel3-fend">Neighborhood Map Project</h2>
+  </div>
+  <!-- Modal Project 4 FEND-->
+  <div class="modal fade" id="project4-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4-fend"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-uppercase" id="myModalLabel4-fend">Website Optimization</h2>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="images_opt/front_end/weboptimization-400-2x.png"
+            alt="Screenshot of Chrome developer tools timeline.">
+          <div class="description-modal">
+            <a class="a-modal" target="_blank" href="https://github.com/kkufieta/mobilePortfolio">Github</a>
+            <!--a class="a-modal" target="_blank" href="http://kkufieta.github.io/mobilePortfolio">Project Link</a-->
+            <p class="p-modal"><span class="skills-modal">HTML</span> <span class="skills-modal">CSS</span><span
+                class="skills-modal">Chrome Developer Tools</span><span class="skills-modal">Critical Rendering
+                Path</span><span class="skills-modal">60FPS Rendering</span></p>
+            <p class="p-modal">Optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring
+              it runs at 60fps and achieves a PageSpeed score of at least 90.</p>
           </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="images_opt/front_end/map-400-2x.png" alt="Screenshot of neighborhood map: NYC with Kathis favorite locations.">
-            <div class="description-modal">
-              <a class="a-modal" target="_blank" href="https://github.com/kkufieta/neighborhoodMap">Github</a>
-              <a class="a-modal" target="_blank" href="http://kkufieta.github.io/neighborhoodMap">Project Link</a>
-              <p class="p-modal"><span class="skills-modal">JavaScript</span> <span class="skills-modal">HTML</span><span class="skills-modal">CSS</span><span class="skills-modal">Knockout</span><span class="skills-modal">AJAX</span><span class="skills-modal">JavaScript frameworks</span></p>
-              <p class="p-modal">A single-page web application, built using the Knockout framework, that displays a Google Map of NYC and various points of interest. Users can search all included landmarks and, when selected, additional information about a landmark is presented from the FourSquare API. Other APIs included are Giphy (for entertainment) and Yr.no (for a NYC weather report).</p>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-    <!-- Modal Project 4 FEND-->
-    <div class="modal fade" id="project4-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4-fend" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title text-uppercase" id="myModalLabel4-fend">Website Optimization</h2>
+  </div>
+  <!-- Modal Project 5 FEND-->
+  <div class="modal fade" id="project5-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5-fend"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-uppercase" id="myModalLabel5-fend">Resume</h2>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="images_opt/front_end/resume-400-2x.png" alt="Screenshot of online resume.">
+          <div class="description-modal">
+            <a class="a-modal" target="_blank" href="https://github.com/kkufieta/resume">Github</a>
+            <!--a class="a-modal" target="_blank" href="http://kkufieta.github.io/resume">Project Link</a-->
+            <p class="p-modal"><span class="skills-modal">HTML</span> <span class="skills-modal">CSS</span><span
+                class="skills-modal">JavaScript</span><span class="skills-modal">jQuery</span></p>
+            <p class="p-modal">Using jQuery, developed an interactive resume application that reads all data from a JSON
+              file and then dynamically modifies the DOM to display the information. Further customized the project by
+              personalizing the design using CSS.</p>
           </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="images_opt/front_end/weboptimization-400-2x.png" alt="Screenshot of Chrome developer tools timeline.">
-            <div class="description-modal">
-              <a class="a-modal" target="_blank" href="https://github.com/kkufieta/mobilePortfolio">Github</a>
-              <a class="a-modal" target="_blank" href="http://kkufieta.github.io/mobilePortfolio">Project Link</a>
-              <p class="p-modal"><span class="skills-modal">HTML</span> <span class="skills-modal">CSS</span><span class="skills-modal">Chrome Developer Tools</span><span class="skills-modal">Critical Rendering Path</span><span class="skills-modal">60FPS Rendering</span></p>
-              <p class="p-modal">Optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90.</p>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-    <!-- Modal Project 5 FEND-->
-    <div class="modal fade" id="project5-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5-fend" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title text-uppercase" id="myModalLabel5-fend">Resume</h2>
+  </div>
+  <!-- Modal Project 6 FEND-->
+  <div class="modal fade" id="project6-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6-fend"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-uppercase" id="myModalLabel6-fend">Feed Reader Testing</h2>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="images_opt/front_end/testing-400-2x.png"
+            alt="Screenshot of Jasmine test results.">
+          <div class="description-modal">
+            <a class="a-modal" target="_blank" href="https://github.com/kkufieta/feedreader">Github</a>
+            <a class="a-modal" target="_blank" href="http://kkufieta.github.io/feedreader">Project Link</a>
+            <p class="p-modal"><span class="skills-modal">JavaScript</span> <span
+                class="skills-modal">Jasmine</span><span class="skills-modal">JavaScript testing frameworks</span></p>
+            <p class="p-modal">Wrote comprehensive unit tests, using the Jasmine testing framework, for an RSS Feed
+              Reader application that uses Google's RSS API.</p>
           </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="images_opt/front_end/resume-400-2x.png" alt="Screenshot of online resume.">
-            <div class="description-modal">
-              <a class="a-modal" target="_blank" href="https://github.com/kkufieta/resume">Github</a>
-              <a class="a-modal" target="_blank" href="http://kkufieta.github.io/resume">Project Link</a>
-              <p class="p-modal"><span class="skills-modal">HTML</span> <span class="skills-modal">CSS</span><span class="skills-modal">JavaScript</span><span class="skills-modal">jQuery</span></p>
-              <p class="p-modal">Using jQuery, developed an interactive resume application that reads all data from a JSON file and then dynamically modifies the DOM to display the information. Further customized the project by personalizing the design using CSS.</p>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-    <!-- Modal Project 6 FEND-->
-    <div class="modal fade" id="project6-fend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6-fend" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title text-uppercase" id="myModalLabel6-fend">Feed Reader Testing</h2>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="images_opt/front_end/testing-400-2x.png" alt="Screenshot of Jasmine test results.">
-            <div class="description-modal">
-              <a class="a-modal" target="_blank" href="https://github.com/kkufieta/feedreader">Github</a>
-              <a class="a-modal" target="_blank" href="http://kkufieta.github.io/feedreader">Project Link</a>
-              <p class="p-modal"><span class="skills-modal">JavaScript</span> <span class="skills-modal">Jasmine</span><span class="skills-modal">JavaScript testing frameworks</span></p>
-              <p class="p-modal">Wrote comprehensive unit tests, using the Jasmine testing framework, for an RSS Feed Reader application that uses Google's RSS API.</p>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+  </div>
+  <!-- Modal Project 1 ML-->
+  <div class="modal fade" id="project1-ml" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1-ml"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-uppercase" id="myModalLabel1-ml">Sparkling Dress</h2>
         </div>
-      </div>
-    </div>
-    <!-- Modal Project 1 ML-->
-    <div class="modal fade" id="project1-ml" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1-ml" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title text-uppercase" id="myModalLabel1-ml">Sparkling Dress</h2>
-          </div>
-          <div class="modal-body">
-            <div class="container">
-              <div class="row">
-                <div class="col-6">
-                  <img class="img-responsive" src="images_opt/creativity/sewing-400-2x.jpg" alt="Adorable kittens as placeholders.">
-                </div>
-                <div class="col-6">
-                  <img class="img-responsive" src="https://media.giphy.com/media/rA4FFNPyTyg1y/giphy.gif">
-                </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <img class="img-responsive" src="images_opt/creativity/sewing-400-2x.jpg"
+                  alt="Adorable kittens as placeholders.">
+              </div>
+              <div class="col-6">
+                <img class="img-responsive" src="https://media.giphy.com/media/rA4FFNPyTyg1y/giphy.gif">
               </div>
             </div>
-            <p class="p-modal">I started my very first wearables project five hours before I intended to wear it, in the sense of 'now or never'. It worked out, I manage to get a sparkling dress for the party and everyone loved it.</p>
-            <p class="p-modal">Next step: Add 12 more LEDs to the dress and wear it to all future parties.</p>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+          <p class="p-modal">I couldn't decide what to wear for the annual Google Holiday party.
+            I had this old black dress but thought it was too bland for the night, so I upgraded it with LEDs and a
+            motion sensor. I started sewing and coding in the morning and had a blinking dress five hours later, just in
+            time for the
+            event! This was my first wearables projects and I was proud and excited to have pulled it off so quickly.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal Project 2 ML-->
-    <div class="modal fade" id="project2-ml" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2-ml" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title text-uppercase" id="myModalLabel2-ml">Building an intervention system</h2>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="http://placekitten.com/555/300" alt="Adorable kittens as placeholders.">
-            <p class="p-modal">Still building it? Not my fault.. please let me down.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+  <!-- Modal Project 2 ML-->
+  <div class="modal fade" id="project2-ml" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2-ml"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-uppercase" id="myModalLabel2-ml">Building an intervention system</h2>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="http://placekitten.com/555/300" alt="Adorable kittens as placeholders.">
+          <p class="p-modal">Still building it? Not my fault.. please let me down.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-    <!-- Modal Project 3 ML-->
-    <div class="modal fade" id="project3-ml" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3-ml" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title text-uppercase" id="myModalLabel3-ml">Creating Customer Segments</h2>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="http://placekitten.com/490/400" alt="Adorable kittens as placeholders.">
-            <p class="p-modal">Awww..dorable.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+  </div>
+  <!-- Modal Project 3 ML-->
+  <div class="modal fade" id="project3-ml" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3-ml"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-uppercase" id="myModalLabel3-ml">Creating Customer Segments</h2>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="http://placekitten.com/490/400" alt="Adorable kittens as placeholders.">
+          <p class="p-modal">Awww..dorable.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-    <!-- Modal Project 4 ML-->
-    <div class="modal fade" id="project4-ml" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4-ml" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title text-uppercase" id="myModalLabel4-ml">Train a smartcab to drive</h2>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="http://placekitten.com/540/300" alt="Adorable kittens as placeholders.">
-            <p class="p-modal">Uh oh, I'll better hide in here.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+  </div>
+  <!-- Modal Project 4 ML-->
+  <div class="modal fade" id="project4-ml" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4-ml"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-uppercase" id="myModalLabel4-ml">Train a smartcab to drive</h2>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="http://placekitten.com/540/300" alt="Adorable kittens as placeholders.">
+          <p class="p-modal">Uh oh, I'll better hide in here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <script>
-      /*
-       * Open the drawer when the menu icon is clicked.
-       */
-      var menu = document.querySelector('#menu');
-      var header = document.querySelector('header');
-      var main = document.querySelector('main');
-      var footer = document.querySelector('footer');
-      var drawer = document.querySelector('#drawer');
-      var navlink = document.querySelectorAll('.nav-link');
+  <script>
+    /*
+     * Open the drawer when the menu icon is clicked.
+     */
+    var menu = document.querySelector('#menu');
+    var header = document.querySelector('header');
+    var main = document.querySelector('main');
+    var footer = document.querySelector('footer');
+    var drawer = document.querySelector('#drawer');
+    var navlink = document.querySelectorAll('.nav-link');
 
-      $(menu).click(function(e) {
-        drawer.classList.toggle('open');
-        e.stopPropagation();
-      });
-      $(header).click(function() {
-        drawer.classList.remove('open');
-      });
-      $(main).click(function() {
-        drawer.classList.remove('open');
-        console.log("nav-link: " + navlink);
-      });
-      $(footer).click(function() {
-        drawer.classList.remove('open');
-      });
-      $(navlink).click(function() {
-        drawer.classList.remove('open');
-        console.log("nav-link: " + navlink);
-      });
-    </script>
+    $(menu).click(function (e) {
+      drawer.classList.toggle('open');
+      e.stopPropagation();
+    });
+    $(header).click(function () {
+      drawer.classList.remove('open');
+    });
+    $(main).click(function () {
+      drawer.classList.remove('open');
+      console.log("nav-link: " + navlink);
+    });
+    $(footer).click(function () {
+      drawer.classList.remove('open');
+    });
+    $(navlink).click(function () {
+      drawer.classList.remove('open');
+      console.log("nav-link: " + navlink);
+    });
+  </script>
 
-    <script>
-      function activateFend() {
-        $('#occupation').html('Front-End Ninja');
-        $('#fend-css').prop('disabled', false);
-        $('#ml-css').prop('disabled', true);
-        $('#skills-css').prop('disabled', true);
+  <script>
+    function activateFend() {
+      $('#occupation').html('Front End');
+      $('#fend-css').prop('disabled', false);
+      $('#ml-css').prop('disabled', true);
+      $('#skills-css').prop('disabled', true);
+    }
+
+    function activateML() {
+      $('#occupation').html('Creativity');
+      $('#fend-css').prop('disabled', true);
+      $('#ml-css').prop('disabled', false);
+      $('#skills-css').prop('disabled', true);
+    }
+
+    function activateSkills() {
+      $('#occupation').html('Skills');
+      $('#fend-css').prop('disabled', true);
+      $('#ml-css').prop('disabled', true);
+      $('#skills-css').prop('disabled', false);
+    }
+
+    ; (function () {
+      activateFend();
+      var throttle = function (type, name, obj) {
+        obj = obj || window;
+        var running = false;
+        var func = function () {
+          if (running) { return; }
+          running = true;
+          requestAnimationFrame(function () {
+            obj.dispatchEvent(new CustomEvent(name));
+            running = false;
+          });
+        };
+        obj.addEventListener(type, func);
+      };
+
+      /* init - you can init any event */
+      throttle("scroll", "optimizedScroll");
+    })();
+
+    // handle event
+    window.addEventListener("optimizedScroll", function () {
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
+      var headerBottom = $('#header-id').offset().top + $('#header-id').height();
+      var mlTop = $('#ml-projects').offset().top;
+      var contactTop = $('#contact-id').offset().top;
+
+      if (docViewBottom > contactTop) {
+        activateSkills();
+      } else if (headerBottom < mlTop) {
+        activateFend();
+      } else {
+        activateML();
       }
+    });
+  </script>
+</body>
 
-      function activateML() {
-        $('#occupation').html('Creativity is intelligence having fun');
-        $('#fend-css').prop('disabled', true);
-        $('#ml-css').prop('disabled', false);
-        $('#skills-css').prop('disabled', true);
-      }
-
-      function activateSkills() {
-        $('#occupation').html('Software Engineer');
-        $('#fend-css').prop('disabled', true);
-        $('#ml-css').prop('disabled', true);
-        $('#skills-css').prop('disabled', false);
-      }
-
-      ;(function() {
-          activateFend();
-          var throttle = function(type, name, obj) {
-              obj = obj || window;
-              var running = false;
-              var func = function() {
-                  if (running) { return; }
-                  running = true;
-                  requestAnimationFrame(function() {
-                      obj.dispatchEvent(new CustomEvent(name));
-                      running = false;
-                  });
-              };
-              obj.addEventListener(type, func);
-          };
-
-          /* init - you can init any event */
-          throttle ("scroll", "optimizedScroll");
-      })();
-
-      // handle event
-      window.addEventListener("optimizedScroll", function() {
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height();
-        var headerBottom = $('#header-id').offset().top + $('#header-id').height();
-        var mlTop = $('#ml-projects').offset().top;
-        var contactTop = $('#contact-id').offset().top;
-
-        if (docViewBottom > contactTop) {
-          activateSkills();
-        } else if (headerBottom < mlTop) {
-          activateFend();
-        } else {
-          activateML();
-        }
-      });
-    </script>
-  </body>
 </html>
